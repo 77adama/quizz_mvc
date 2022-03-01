@@ -34,20 +34,20 @@ function connexion(string $login, string $password):void{
        $user= find_user_login_password($login,$password);
        if(count($user)!=0){
 //utilisateur existe
-        $_SESSION["user-connect"]=$user;
+        $_SESSION[KEY_USER_CONNECT]=$user;
         //?controller=user&action=accueil
         header("location".WEB_ROOT."?controller=user&action=accueil");
         exit();
        }else{
 //utilisateur n'existe pas
 $errors['connexion']="Login ou Mot de passe Incorrect";
-$_SESSION['errors']=$errors;
+$_SESSION[KEY_ERRORS]=$errors;
 header("location".WEB_ROOT);
         exit(); 
        }
     }else{
         //Erreur de validation
-        $_SESSION['errors']=$errors;
+        $_SESSION[KEY_ERRORS]=$errors;
         header("location".WEB_ROOT);
         exit();
     }
