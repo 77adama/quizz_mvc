@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="<?=WEB_ROOT.'css'.DIRECTORY_SEPARATOR."style.connexion.css"?>">
   <script src="https://kit.fontawesome.com/a076d05399.js"> </script>
   <title>Mon site - Connexion</title>
+  
 </head>
 <body>
   <div class="container">
@@ -14,7 +15,9 @@
      <button type="submit">X</button>
    </div>
     <div class="tab-body" data-id="connexion">
-      <form>
+      <form action="<?=WEB_ROOT?>" method="POST">
+      <input type="hidden" name="controller" value="securite">
+      <input type="hidden" name="action" value="connexion">
         <div class="row">
           <i class="far fa-user"></i>
           <input type="email" class="input" placeholder="Adresse Mail">
@@ -48,7 +51,7 @@
       <a class="tab-link" data-ref="inscription" href="javascript:void(0)">s'inscrire pour jouer?</a>
     </div>
   </div>
-  <script src="g.js" defer></script>
+  <script src="<?=WEB_ROOT.'js'.DIRECTORY_SEPARATOR."script.connexion.js"?>"></script>
 </body>
 
 </html>

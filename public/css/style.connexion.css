@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
- background-color: #7aacef;
+ background-color: gold;
 }
 
 .container {
@@ -31,7 +31,7 @@ body {
   justify-content: center;
 }
 .nav{
-  background-color: rgb(0, 4, 255);
+  background-color: #51bfd0;
   position: absolute;
   bottom: 300px;
   width: 100%;
@@ -170,7 +170,7 @@ i{
 
 .tab-link.active {
   font-weight: bold;
-  background-color: blue;
+  background-color: #51bfd0;
   color: #f0f6fb;
   font-size: larger;
 }
