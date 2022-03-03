@@ -3,6 +3,7 @@ require_once(PATH_SRC."models".DIRECTORY_SEPARATOR."user.model.php");
 if($_SERVER["REQUEST_METHOD"]=="POST"){
    if(isset($_REQUEST['action'])){
        if($_REQUEST['action']=="connexion"){
+           die("je suis");
             $login=$_POST['login'];
             $password=$_POST['login'];
             connexion($login,$password);
