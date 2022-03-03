@@ -4,6 +4,9 @@
     margin: 0;
 }
 body{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -20,7 +23,7 @@ nav{
     background-color: #042425;
 }
 .container{
-   
+   background-color: whitesmoke;
     display: flex;
     flex: 8.5;
     display: flex;
@@ -56,7 +59,7 @@ h1{
    font-size: 25px;
 }
 h2{
-
+   
 }
 .entete{
     position: absolute;
@@ -68,6 +71,7 @@ h2{
     
 }
 .section_gauche{
+   margin: 3%;
     position: relative;
     flex: 4;
     display: flex;
@@ -75,11 +79,15 @@ h2{
    justify-content: center;
    flex-direction: column;
    justify-content: space-around;
-   
+   border-radius: 20px;
+   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
    padding: 20px;
 }
 .section_droite{
     flex: 6;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    margin-right: 10%;
     
 }
 ul{
@@ -89,11 +97,11 @@ ul{
     flex: 1; 
 }
 .im{
-    height: 50px;
+    height: 150px;
     position: absolute;
-    top: 50px;
+    margin-top: -10%;
     left: 50px;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 .image{
     /* background-color: ; */
@@ -110,9 +118,28 @@ ul{
     justify-content: space-around;
     right: 200px;
     position: relative;
+    margin-left: 20%;
 }
 a{
     font-size: 30px;
     color: black;
+    text-decoration: none;
     
+}
+button{
+    height: 35%;
+    width: 10%;
+    background-color: rgb(57,221,214);
+    color:white;
+    border: 1px solid white;
+    font-size: large;
+   position: absolute;
+   margin-left: 80%;
+}
+.hov{
+    background-color: beige;
+    width: 100%;
+}
+.img1{
+    position: absolute;
 }

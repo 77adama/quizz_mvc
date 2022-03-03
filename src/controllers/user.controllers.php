@@ -21,7 +21,7 @@ if($_SERVER["REQUEST_METHOD"]=="GET"){
         }elseif ($_REQUEST['action']=="liste.joueur") {
             
            $data = lister_joueur();
-        require_once(PATH_VIEWS."user". DIRECTORY_SEPARATOR."liste.joueur.html.php");
+       // require_once(PATH_VIEWS."user". DIRECTORY_SEPARATOR."liste.joueur.html.php");
           
        }
    }
@@ -29,9 +29,10 @@ if($_SERVER["REQUEST_METHOD"]=="GET"){
 
 function lister_joueur() {
     //appel du modèle
-   $data= find_users(ROLE_JOUEUR);
-    
-   
-   return $data;
+    ob_start();
+    $data= find_users(ROLE_JOUEUR);
+    require_once(PATH_VIEWS."user". DIRECTORY_SEPARATOR."liste.joueur.html.php");
+    $content_for_views=ob_get_clean();
+    require_once(PATH_VIEWS."user". DIRECTORY_SEPARATOR."accueil.html.php");
 
 }
