@@ -22,7 +22,7 @@ define("PATH_VIEWS",ROOT."templates".DIRECTORY_SEPARATOR);
 define("PATH_DB",ROOT."data".DIRECTORY_SEPARATOR."db.json");
 /**
 * Chemin sur le dossier public , pour inclusion des images,css et js */
-define("WEB_ROOT","http://localhost:8080/quizz_mvc/public/");
+define("WEB_ROOT","http://localhost:8000/");
 
 //constante pour les clés d'erreurs
 define("KEY_ERRORS","errors");
