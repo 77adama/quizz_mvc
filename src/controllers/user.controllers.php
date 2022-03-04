@@ -11,8 +11,11 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
           $login=$_POST['login'];
           $password=$_POST['password'];
           $confirmPassword=$_POST['confirmPassword'];
+          
           inscription($nom, $prenom, $login, $password, $confirmPassword);
+          insert_users($nom, $prenom, $login, $password);
           header("location:".WEB_ROOT);
+          exit();
        }
    }
 }
@@ -33,6 +36,10 @@ if($_SERVER["REQUEST_METHOD"]=="GET"){
           
        }
    }
+   else{
+    require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."pageErreur.html.php");
+
+ }
 }
 
 function lister_joueur() {

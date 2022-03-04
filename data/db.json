@@ -1,44 +1,236 @@
 {
-    "users":[
-                {
-                "nom":"Gueye",
-                "prenom" : "Adama",
-                "login":"joueur1@gmail.com",
-                "password":"joueur1",
-                "role":"ROLE_JOUEUR",
-                "score":15
-                },
-                {
-                    "nom":"Gueye",
-                    "prenom" : "Adama",
-                    "login":"joueur2@gmail.com",
-                    "password":"joueur2",
-                    "role":"ROLE_JOUEUR",
-                    "score":1243
-                    },
-                    {
-                        "nom":"Gueye",
-                        "prenom" : "Adama",
-                        "login":"joueur3@gmail.com",
-                        "password":"joueur3",
-                        "role":"ROLE_JOUEUR",
-                        "score":345
-                        },
-                        {
-                            "nom":"Gueye",
-                            "prenom" : "Adama",
-                            "login":"joueur4@gmail.com",
-                            "password":"joueur4",
-                            "role":"ROLE_JOUEUR",
-                            "score":987
-                            },
-                {
-                "nom":"faye",
-                "prenom":"Fatou",
-                "login":"admin@gmail.com",
-                "password":"admin12",
-                "role":"ROLE_ADMIN",
-                "score":0
-                }
+    "users": [
+        {
+            "nom": "Gueye",
+            "prenom": "Adama",
+            "login": "joueur1@gmail.com",
+            "password": "joueur1",
+            "role": "ROLE_JOUEUR",
+            "score": 15
+        },
+        {
+            "nom": "Gueye",
+            "prenom": "Adama",
+            "login": "joueur2@gmail.com",
+            "password": "joueur2",
+            "role": "ROLE_JOUEUR",
+            "score": 1243
+        },
+        {
+            "nom": "Gueye",
+            "prenom": "Adama",
+            "login": "joueur3@gmail.com",
+            "password": "joueur3",
+            "role": "ROLE_JOUEUR",
+            "score": 345
+        },
+        {
+            "nom": "faye",
+            "prenom": "Fatou",
+            "login": "admin@gmail.com",
+            "password": "admin12",
+            "role": "ROLE_ADMIN",
+            "score": 0
+        },
+        {
+            "nom": "diop",
+            "prenom": "ami",
+            "login": "amidiop@gmail.com",
+            "password": "amidiop123",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "soumare",
+            "prenom": "seynabou",
+            "login": "nabousoum98@gmail.com",
+            "password": "nabousoum98",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "modou",
+            "login": "modoudiop@gmail.com",
+            "password": "modoudiop123",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "ali",
+            "login": "alidiop@gmail.com",
+            "password": "alidiop123",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "mbaye",
+            "prenom": "tahir",
+            "login": "tahir@gmail.com",
+            "password": "tahir21",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "mbaye",
+            "prenom": "tahir",
+            "login": "tahir@gmail.com",
+            "password": "tahir123",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "mbaye",
+            "prenom": "tahir",
+            "login": "joeur@gmail.com",
+            "password": "jesuispasser1",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "mbaye",
+            "prenom": "ami",
+            "login": "joeur@gmail.com",
+            "password": "jetest123",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "Adama",
+            "login": "joueur@gmail.com",
+            "password": "A2zert",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "Adama",
+            "login": "joueur@gmail.com",
+            "password": "A2zert",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "Adama",
+            "login": "joueur@gmail.com",
+            "password": "A2zert",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "Adama",
+            "login": "joueur@gmail.com",
+            "password": "A2zert",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "Adama",
+            "login": "joueur@gmail.com",
+            "password": "A2zert",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "Adama",
+            "login": "joueur@gmail.com",
+            "password": "A2zert",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "Adama",
+            "login": "joueur@gmail.com",
+            "password": "A2zert",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "Adama",
+            "login": "joueur@gmail.com",
+            "password": "A2zert",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "Adama",
+            "login": "joueur@gmail.com",
+            "password": "A2zert",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "Adama",
+            "login": "joueur@gmail.com",
+            "password": "A2zert",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "Adama",
+            "login": "joueur@gmail.com",
+            "password": "A2zert",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "Adama",
+            "login": "joueur@gmail.com",
+            "password": "A2zert",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "Adama",
+            "login": "joueur@gmail.com",
+            "password": "A2zert",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "Adama",
+            "login": "joueur@gmail.com",
+            "password": "A2zert",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "adama",
+            "login": "adama@gmail.com",
+            "password": "A2zert",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "Adama",
+            "login": "joueur@gmail.com",
+            "password": "A2zert",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "Adama",
+            "login": "joueur@gmail.com",
+            "password": "A2zert",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        }
     ]
 }

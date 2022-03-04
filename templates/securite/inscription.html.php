@@ -27,7 +27,7 @@ if(isset($_SESSION[KEY_ERRORS])){
                         <h2 id="h2oc">Pour tester votre niveau de culture générale</h2>
                     </div>
                     <div id="formulaire">
-                            <form id="form" action="#" method="POST">
+                            <form id="form" action="<?= WEB_ROOT?>" method="POST">
                             <input type="hidden" name="controller" value="user">
                             <input type="hidden" name="action" value="inscription">
                             <?php if(isset($errors['prenom'])): ?>
@@ -75,7 +75,7 @@ if(isset($_SESSION[KEY_ERRORS])){
                                 <small>Error message</small>
                             </div>
 
-                            <button class="fot-btn2"> creer un compte</button> 
+                            <button type="submit" class="fot-btn2"> creer un compte</button> 
                             
                         <?php
                             if(isset($message)){
