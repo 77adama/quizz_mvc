@@ -26,19 +26,19 @@
                 <div class="btn">
                     <div class="hov">
                         <a href="">Liste Questions</a> 
-                        <img src="<?=WEB_ROOT."img/ic_liste.png"?>" class="img1" alt="">
+                        <img src="<?=WEB_ROOT."img/ic-liste.png"?>" class="img1" alt="">
                     </div>
                     <div class="hov">
                          <a href="">Créer Admin</a> 
-                         <img src="img/Icones/ic_ajout.png" class="img1" alt="">
+                         <img src="<?=WEB_ROOT."img/ic-ajout.png"?>" class="img2" alt="">
                     </div>
                     <div class="hov">
                          <a href="<?=WEB_ROOT."?controller=user&action=liste.joueur"?>">Liste joueurs</a> 
-                         <img src="img/Icones/ic_liste.png" class="img1" alt="">
+                         <img src="<?=WEB_ROOT."img/ic-liste.png" ?>"class="img2" alt="">
                     </div>
                     <div class="hov">
                           <a href="">Créer Question</a>
-                          <img src="img/Icones/ic_ajout.png" class="img1" alt="">
+                          <img src="<?=WEB_ROOT."img/ic-ajout.png"?>" class="img1" alt="">
                     </div>
                   
                 </div>

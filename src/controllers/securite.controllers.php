@@ -24,7 +24,10 @@ if($_SERVER["REQUEST_METHOD"]=="GET"){
          
        }elseif ($_REQUEST['action']=="deconnexion") {
           logout();
-       }//Déconnexion
+       }elseif($_REQUEST['action']=="inscription"){
+        require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."inscription.html.php");
+
+       }
    }else{
     require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."connexion.html.php");
         

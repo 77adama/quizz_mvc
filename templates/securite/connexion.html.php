@@ -7,7 +7,7 @@
    
    ?>
    <div id="entete">
-        <img src="" alt="">
+        <img class="imglogo" src="<?=WEB_ROOT."img/logonav.png"?>" alt="">
         <h1>Le plaisir de jouer</h1>
     </div>
   <div id="main">
@@ -27,7 +27,8 @@
                  <?php endif ?><br>
               <div class="form-control">
                 <label>Login</label> <br>
-                <input type="text" name="login" id="login" placeholder="Login"> <br>
+                <input type="text" name="login" id="login" placeholder="Login"> 
+                <img src="<?=WEB_ROOT."img/ic-login"?>" alt=""> <br>
                 <small>Error message</small>
               </div>
               <?php if(isset($errors['password'])): ?>
@@ -35,12 +36,13 @@
                 <?php endif ?><br>
               <div class="form-control">
                 <label >Password</label> <br>
-                <input type="password" name="password" id="password" placeholder="Password"> <br>
+                <input type="password" name="password" id="password" placeholder="Password">
+                 <br>
                 <small>Error message</small>
               </div>
               <div id="footer">
                 <input type="submit" value="connexion" id="submit">
-                <a href="#">s'inscrire pour jouer</a>
+                <a href="<?=WEB_ROOT."?controller=securite&action=inscription"?>">s'inscrire pour jouer</a>
               </div>
         </form>
       </div>

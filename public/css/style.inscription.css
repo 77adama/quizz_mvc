@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+   
+}
+
+:root{
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image:url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* filter: blur(1px); */
+}
+#entete{
+    display: flex;
+    flex: 1;
+    background-color: rgb(8, 62, 66);
+    align-items: center;
+    justify-content: center;
+    margin: -1%;
+
+}
+#main{
+    display: flex;
+    flex: 8;
+    justify-content: center;
+   
+}
+h1{
+    color: white;
+
+}
+#container{
+    margin-top: 1%;
+    background-color: white;
+    height: 100%;
+    width: 70%;
+    border-radius: 20px;
+    display: flex;
+   
+}
+#left{
+    flex: 2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#text{
+    flex: 1;
+    border-bottom: 1px solid black;
+}
+#h2oc{
+    opacity: 0.33;
+}
+h2{
+    margin-left: 5%;
+    opacity: 1px;
+}
+#formulaire{
+    margin-left: 5%;
+    flex: 8;
+}
+#right{
+    flex: 1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+h3{
+    margin-left: 20%;
+    font-size: x-large;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    color: black;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 80%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-control input:hover{
+    border: 2px solid rgb(81,191,208);
+    
+}
+button{
+    cursor: pointer;
+    background-color: rgb(81,191,208);
+    border: 2px solid rgb(81,191,208);
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 8px;
+    margin-top: 20px;
+    width: 30%;
+    height: 20%;
+}
+#fot{
+    margin-top: -5%;
+    display: flex;
+}
+.fot-btn{
+    margin-left: 50%;
+}
+.fot-btn2{
+    margin-left: 30%;
+}
+img{
+    height: 40%;
+    width: 70%;
+    border: 3px solid rgb(81,191,208);
+    border-radius: 50%;
+    margin-left: 10%;
+}
+.form-control.success input{
+    border-color: var(--success-color);
+}
+
+.form-control.error input{
+    border-color: var(--error-color);
+}
+
+.form-control small{
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+
