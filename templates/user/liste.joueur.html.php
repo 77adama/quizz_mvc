@@ -1,4 +1,4 @@
-    <p class="titre"> <b> LISTE DES JOUEURS PAR SCORE </b></p>
+    <p class="titre"> <b class="titre"> LISTE DES JOUEURS PAR SCORE </b></p>
 <div class="tableau">
     <div id="liste">
                 <table>
@@ -18,4 +18,4 @@
                     </table>
     </div>
 </div>
-<div class="input"><input type="submit" value="suivant"></div>
+<div class="inputt"><input class="submitt" type="submit" value="suivant"></div>

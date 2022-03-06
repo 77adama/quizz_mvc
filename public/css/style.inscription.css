@@ -16,6 +16,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     
+    
     /* filter: blur(1px); */
 }
 #entete{
@@ -77,16 +78,22 @@ h3{
     margin-left: 20%;
     font-size: x-large;
 }
+form{
+    
+}
 .form-control{
     margin-bottom: 10px;
     padding-bottom: 20px;
     position: relative;
+    bottom: 6px;
+    
 }
 
 .form-control label{
     color: black;
     display: block;
     margin-bottom: 5px;
+    bottom: 5px;
 }
 
 .form-control input{

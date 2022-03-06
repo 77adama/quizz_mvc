@@ -16,6 +16,17 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
           insert_users($nom, $prenom, $login, $password);
           header("location:".WEB_ROOT);
           exit();
+       }elseif ($_REQUEST['action']=="inscriptionA"){
+        $nom=$_POST['nom'];
+        $prenom=$_POST['prenom'];
+        $login=$_POST['login'];
+        $password=$_POST['password'];
+        $confirmPassword=$_POST['confirmPassword'];
+        
+        inscriptionA($nom, $prenom, $login, $password, $confirmPassword);
+        insert_usersA($nom, $prenom, $login, $password);
+        header("location:".WEB_ROOT);
+        exit();
        }
    }
 }
@@ -35,6 +46,10 @@ if($_SERVER["REQUEST_METHOD"]=="GET"){
        // require_once(PATH_VIEWS."user". DIRECTORY_SEPARATOR."liste.joueur.html.php");
           
        }
+    //    elseif($_REQUEST['action']=="creeradmin"){
+    //        $data= creer_admin();
+           
+    //    }
    }
    else{
     require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."pageErreur.html.php");
@@ -51,6 +66,16 @@ function lister_joueur() {
     require_once(PATH_VIEWS."user". DIRECTORY_SEPARATOR."accueil.html.php");
 
 }
+// function creer_admin(){
+//     ob_start();
+//     $data= find_users(ROLE_ADMIN);
+//     require_once(PATH_VIEWS."securite". DIRECTORY_SEPARATOR."creeradmin.html.php");
+//     $content_for_views=ob_get_clean();
+//     require_once(PATH_VIEWS."user". DIRECTORY_SEPARATOR."accueil.html.php");
+
+// }
+
+
 function inscription(string $nom ,string $prenom,  string $login, string $password, string $confirmPassword):void{
     $errors=[];
     champ_obligatoire('nom', $nom,$errors,"Ce champ est obligatoire");
@@ -65,6 +90,23 @@ function inscription(string $nom ,string $prenom,  string $login, string $passwo
         $_SESSION[KEY_ERRORS]=$errors;
         header("location:".WEB_ROOT."?controller=securite&action=inscription");
         exit();
+    }
+
+}
+
+function inscriptionA(string $nom ,string $prenom,  string $login, string $password, string $confirmPassword):void{
+    $errors=[];
+    champ_obligatoire('nom', $nom,$errors,"Ce champ est obligatoire");
+    champ_obligatoire('prenom', $prenom,$errors,"Ce champ est obligatoire");
+    champ_obligatoire('confirmPassword', $confirmPassword,$errors,"Ce champ est obligatoire");
+    champ_obligatoire('login', $login,$errors,"Ce champ est obligatoire");
+    champ_obligatoire('password', $password,$errors,"Ce champ est obligatoire");
+    if(count($errors)==0){
+        valid_email('login',$login,$errors);
+        valid_password('login',$password,$errors);
+    }else{
+        require_once(PATH_VIEWS."user". DIRECTORY_SEPARATOR."accueil.html.php");
+
     }
 
 }

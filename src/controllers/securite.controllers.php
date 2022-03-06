@@ -27,7 +27,19 @@ if($_SERVER["REQUEST_METHOD"]=="GET"){
        }elseif($_REQUEST['action']=="inscription"){
         require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."inscription.html.php");
 
+     }elseif($_REQUEST['action']=="inscription"){
+        require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."creeradmin.html.php");
      }
+
+     elseif($_REQUEST['action']=="creeradmin"){
+        $data= creer_admin();
+        
+    }
+
+
+      elseif($_REQUEST['action']=="inscriptionA"){
+       require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."creeradmin.html.php");
+      }
      else{
         require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."pageErreur.html.php");
 
@@ -78,4 +90,13 @@ function logout(){
     session_destroy();
     header("location:".WEB_ROOT);
     exit();
+}
+
+function creer_admin(){
+    ob_start();
+    $data= find_users(ROLE_ADMIN);
+    require_once(PATH_VIEWS."securite". DIRECTORY_SEPARATOR."creeradmin.html.php");
+    $content_for_views=ob_get_clean();
+    require_once(PATH_VIEWS."user". DIRECTORY_SEPARATOR."accueil.html.php");
+
 }

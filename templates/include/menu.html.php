@@ -23,7 +23,7 @@
                  <div class="image"><img class="im" src="<?=WEB_ROOT."img/im.png"?>" alt=""></div>
                 <div class="btn">
                    <a href="">Liste Questions</a> 
-                    <a href="">Créer Admin</a> 
+                    <a href="<?=WEB_ROOT."?controller=user&action=creer.admin"?>">Créer Admin</a> 
                     <a href="<?=WEB_ROOT."?controller=user&action=liste.joueur"?>">Liste joueurs</a> 
                     <a href="">Créer Question</a>
                 </div>

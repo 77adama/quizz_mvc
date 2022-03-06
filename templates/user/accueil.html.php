@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="<?=WEB_ROOT.'css'.DIRECTORY_SEPARATOR."style.accueil.css"?>">
     <link rel="stylesheet" href="<?=WEB_ROOT.'css'.DIRECTORY_SEPARATOR."style.liste.joueur.css"?>">
+    <link rel="stylesheet" href="<?=WEB_ROOT.'css'.DIRECTORY_SEPARATOR."style.creer.admin.css"?>">
 </head>
 <body>
     <nav>     
@@ -29,7 +30,7 @@
                         <img src="<?=WEB_ROOT."img/ic-liste.png"?>" class="img1" alt="">
                     </div>
                     <div class="hov">
-                         <a href="">Créer Admin</a> 
+                         <a href="<?=WEB_ROOT."?controller=securite&action=creeradmin"?>">Créer Admin</a> 
                          <img src="<?=WEB_ROOT."img/ic-ajout.png"?>" class="img2" alt="">
                     </div>
                     <div class="hov">
@@ -51,5 +52,6 @@
         </div>
         <?php endif ?>
     </div>
+    <script src="<?= WEB_ROOT."js/script.creeradmin.js" ?>"></script>
 </body>
 </html>

@@ -28,7 +28,7 @@
               <div class="form-control">
                 <label>Login</label> <br>
                 <input type="text" name="login" id="login" placeholder="Login"> 
-                <img src="<?=WEB_ROOT."img/ic-login"?>" alt=""> <br>
+                <img class="eml" src="<?=WEB_ROOT."img/ic-login.png"?>" alt=""> <br>
                 <small>Error message</small>
               </div>
               <?php if(isset($errors['password'])): ?>
@@ -37,6 +37,7 @@
               <div class="form-control">
                 <label >Password</label> <br>
                 <input type="password" name="password" id="password" placeholder="Password">
+                <img class="mdp" src="<?=WEB_ROOT."img/ic-password.png"?>" alt="">
                  <br>
                 <small>Error message</small>
               </div>

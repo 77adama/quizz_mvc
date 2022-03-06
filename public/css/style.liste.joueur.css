@@ -47,7 +47,7 @@ table{
     color: #8b7e6e;
     font-size: 30px;
 }
-.input{
+.inputt{
     position: relative;
     background-color: #39ddd6;
     width: 14%;
@@ -59,7 +59,7 @@ table{
      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 
 }
-input{
+.submitt{
     position: relative;
     
     border: none;
