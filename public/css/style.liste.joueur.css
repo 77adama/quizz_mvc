@@ -1,5 +1,4 @@
 #liste{
-   
     display: flex;
     justify-content: space-around;
     font-size: larger;
@@ -57,7 +56,7 @@ table{
     align-items: center;
     justify-content: center;
      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-
+   
 }
 .submitt{
     position: relative;
@@ -65,7 +64,7 @@ table{
     border: none;
     background-color: #39ddd6;
     color: white;
-    font-size: 28px;
+    font-size: 24px;
     border-radius: 1px;
 
 }

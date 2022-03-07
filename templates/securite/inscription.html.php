@@ -17,6 +17,7 @@ if(isset($_SESSION[KEY_ERRORS])){
     </head>
     <body>
        <div id="entete">
+           <img class="imgg" src="<?=WEB_ROOT."img/logonav.png"?>" alt="">
             <h1>Le plaisir de jouer</h1>
         </div>
         <div id="main">
@@ -34,7 +35,7 @@ if(isset($_SESSION[KEY_ERRORS])){
                                 <small style="color:red"> <?= $errors['prenom']; ?> </small>
                                 <?php endif ?><br>
                             <div class="form-control">
-                                <label><b>PRENOM</b></label>
+                                <label><b>PRENOM</b></label> 
                                 <input id="prenom" type="text" placeholder="AAAAA" name="prenom" >
                                 <small>Error message</small>
                             </div>
@@ -74,7 +75,12 @@ if(isset($_SESSION[KEY_ERRORS])){
                                 <input id="password2" type="password" placeholder="Confirm Password" name="confirmPassword" >
                                 <small>Error message</small>
                             </div>
-
+                                <div id="divavtr">
+                                    <b id="avtr">
+                                        Avatar
+                                    </b>
+                                    <button id="btnavtr">coisir un fichier</button>
+                                </div>
                             <button type="submit" class="fot-btn2"> creer un compte</button> 
                             
                         <?php

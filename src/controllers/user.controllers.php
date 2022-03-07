@@ -16,17 +16,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
           insert_users($nom, $prenom, $login, $password);
           header("location:".WEB_ROOT);
           exit();
-       }elseif ($_REQUEST['action']=="inscriptionA"){
-        $nom=$_POST['nom'];
-        $prenom=$_POST['prenom'];
-        $login=$_POST['login'];
-        $password=$_POST['password'];
-        $confirmPassword=$_POST['confirmPassword'];
-        
-        inscriptionA($nom, $prenom, $login, $password, $confirmPassword);
-        insert_usersA($nom, $prenom, $login, $password);
-        header("location:".WEB_ROOT);
-        exit();
        }
    }
 }
@@ -35,7 +24,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 if($_SERVER["REQUEST_METHOD"]=="GET"){
     if(isset($_REQUEST['action'])){
         if(!is_connect()){
-            header("location:".WEB_ROOT);
+            header("location:".PATH_VIEWS);
             exit();
         }
        if($_REQUEST['action']=="accueil"){  
@@ -94,19 +83,19 @@ function inscription(string $nom ,string $prenom,  string $login, string $passwo
 
 }
 
-function inscriptionA(string $nom ,string $prenom,  string $login, string $password, string $confirmPassword):void{
-    $errors=[];
-    champ_obligatoire('nom', $nom,$errors,"Ce champ est obligatoire");
-    champ_obligatoire('prenom', $prenom,$errors,"Ce champ est obligatoire");
-    champ_obligatoire('confirmPassword', $confirmPassword,$errors,"Ce champ est obligatoire");
-    champ_obligatoire('login', $login,$errors,"Ce champ est obligatoire");
-    champ_obligatoire('password', $password,$errors,"Ce champ est obligatoire");
-    if(count($errors)==0){
-        valid_email('login',$login,$errors);
-        valid_password('login',$password,$errors);
-    }else{
-        require_once(PATH_VIEWS."user". DIRECTORY_SEPARATOR."accueil.html.php");
+// function inscriptionA(string $nom ,string $prenom,  string $login, string $password, string $confirmPassword):void{
+//     $errors=[];
+//     champ_obligatoire('nom', $nom,$errors,"Ce champ est obligatoire");
+//     champ_obligatoire('prenom', $prenom,$errors,"Ce champ est obligatoire");
+//     champ_obligatoire('confirmPassword', $confirmPassword,$errors,"Ce champ est obligatoire");
+//     champ_obligatoire('login', $login,$errors,"Ce champ est obligatoire");
+//     champ_obligatoire('password', $password,$errors,"Ce champ est obligatoire");
+//     if(count($errors)==0){
+//         valid_email('login',$login,$errors);
+//         valid_password('login',$password,$errors);
+//     }else{
+//        require_once(PATH_VIEWS."user". DIRECTORY_SEPARATOR."accueil.html.php");
+//         ;
+//     }
 
-    }
-
-}
+// }

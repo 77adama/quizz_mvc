@@ -1,3 +1,4 @@
+
 const form=document.getElementById('form');
 const nom=document.getElementById('nom')
 const prenom=document.getElementById('prenom')
@@ -8,16 +9,16 @@ const confirmPassword=document.getElementById('password2')
 
 function showError(input,message){
     //recuper le parent de input
-      const formControl1 = input.parentElement;
+      const formControl = input.parentElement;
       //attribuer la class form-control et error
-      formControl1.className = "form-control1 error";
+      formControl.className = "control error";
       // récuper la balisse small
-      const small = formControl.querySelector('small1');
-      small1.innerText = message;
+      const small = formControl.querySelector('small');
+      small.innerText = message;
 }
 function showSuccess(input){
-    const formControl1 = input.parentElement;
-    formControl1.className = "form-control1 success";
+    const formControl = input.parentElement;
+    formControl.className = "control success";
 }
 function testEmail(input){
     const email = input.value.trim().toLowerCase();

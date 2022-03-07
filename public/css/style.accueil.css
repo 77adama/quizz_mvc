@@ -124,7 +124,7 @@ ul{
 }
 a{
     font-size: 30px;
-    color: black;
+    color: #a09487;
     text-decoration: none;
     
 }
@@ -155,13 +155,14 @@ button{
 }
 .img1{
    position: relative;
-    height: 70%;
+    height: 50%;
     left: 55%;
     top: 13%;
 }
 .img2{
     position: relative;
-     height: 70%;
+     height: 50%;
      left: 61%;
      top: 13%;
  }
+ 

@@ -13,6 +13,9 @@
     <nav>     
         <img src="<?=WEB_ROOT."img/logonav.png" ?>" alt="">
         <h1>Le plaisir de jouer</h1>
+        <?php if(is_joueur()): ?>
+        <button onclick="window.location.href='<?=WEB_ROOT."?controller=securite&action=deconnexion"?>';">Déconnexion</button>
+        <?php endif ?>
     </nav>
      
     <div class="container">
@@ -30,7 +33,7 @@
                         <img src="<?=WEB_ROOT."img/ic-liste.png"?>" class="img1" alt="">
                     </div>
                     <div class="hov">
-                         <a href="<?=WEB_ROOT."?controller=securite&action=creeradmin"?>">Créer Admin</a> 
+                         <a href="<?=WEB_ROOT."?controller=securite&action=creer.admin"?>">Créer Admin</a> 
                          <img src="<?=WEB_ROOT."img/ic-ajout.png"?>" class="img2" alt="">
                     </div>
                     <div class="hov">
@@ -52,6 +55,6 @@
         </div>
         <?php endif ?>
     </div>
-    <script src="<?= WEB_ROOT."js/script.creeradmin.js" ?>"></script>
+    <script src="<?= WEB_ROOT."js/script.creer.admin.js" ?>"></script>
 </body>
 </html>

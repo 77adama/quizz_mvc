@@ -71,54 +71,6 @@
             "password": "azerty1",
             "role": "ROLE_JOUEUR",
             "score": "0"
-        },
-        {
-            "nom": "sx",
-            "prenom": "tahir",
-            "login": "hh",
-            "password": "hh",
-            "role": "ROLE_ADMIN",
-            "score": "0"
-        },
-        {
-            "nom": "diop",
-            "prenom": "Adama",
-            "login": "aad",
-            "password": "df",
-            "role": "ROLE_ADMIN",
-            "score": "0"
-        },
-        {
-            "nom": "",
-            "prenom": "",
-            "login": "",
-            "password": "",
-            "role": "ROLE_ADMIN",
-            "score": "0"
-        },
-        {
-            "nom": "",
-            "prenom": "",
-            "login": "",
-            "password": "",
-            "role": "ROLE_ADMIN",
-            "score": "0"
-        },
-        {
-            "nom": "",
-            "prenom": "",
-            "login": "",
-            "password": "",
-            "role": "ROLE_ADMIN",
-            "score": "0"
-        },
-        {
-            "nom": "",
-            "prenom": "",
-            "login": "",
-            "password": "",
-            "role": "ROLE_ADMIN",
-            "score": "0"
         }
     ]
 }
