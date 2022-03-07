@@ -18,8 +18,19 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         $login=$_POST['login'];
         $password=$_POST['password'];
         $confirmPassword=$_POST['confirmPassword'];
-        
-        creerAdmin($nom, $prenom, $login, $password, $confirmPassword);
+        creerAdmin($nom, $prenom, $login, $password,$confirmPassword);
+        if(test_email_unique($login)==false){
+            insert_usersA($nom, $prenom, $login, $password);
+            header("location:".WEB_ROOT."?controller=securite&action=creer.admin");
+            exit();
+        }else{
+            $errors['emailExiste']="L email existe deja";
+            $_SESSION[KEY_ERRORS]=$errors;
+            header("location:".WEB_ROOT."?controller=securite&action=creer.admin");
+            exit();
+
+        }
+         
        }
    }
 }
@@ -92,15 +103,14 @@ function logout(){
 }
 
 function creer_admin(){
-    ob_start();
-    $data= find_users(ROLE_ADMIN);
+        ob_start();
+    // $data= find_users(ROLE_ADMIN);
     require_once(PATH_VIEWS."securite". DIRECTORY_SEPARATOR."creer.admin.html.php");
     $content_for_views=ob_get_clean();
     require_once(PATH_VIEWS."user". DIRECTORY_SEPARATOR."accueil.html.php");
 
 }
-function creerAdmin
-(string $nom ,string $prenom,  string $login, string $password, string $confirmPassword):void{
+function creerAdmin(string $nom ,string $prenom,  string $login, string $password, string $confirmPassword):void{
     $errors=[];
     champ_obligatoire('nom', $nom,$errors,"Ce champ est obligatoire");
     champ_obligatoire('prenom', $prenom,$errors,"Ce champ est obligatoire");

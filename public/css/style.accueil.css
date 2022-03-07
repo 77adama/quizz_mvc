@@ -58,9 +58,7 @@ h1{
    color: azure;
    font-size: 25px;
 }
-h2{
-   
-}
+
 .entete{
     position: absolute;
    right: 40;
@@ -105,7 +103,7 @@ ul{
     border-radius: 50%;
 }
 .image{
-    /* background-color: ; */
+   
     background-image: linear-gradient(to bottom, white, #51bfd0);
     flex: 3;
     width: 100%;

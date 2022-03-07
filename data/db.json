@@ -71,6 +71,70 @@
             "password": "azerty1",
             "role": "ROLE_JOUEUR",
             "score": "0"
+        },
+        {
+            "nom": "sx",
+            "prenom": "Adama",
+            "login": "agueye451@gmail.com",
+            "password": "agueye451",
+            "role": "ROLE_ADMIN",
+            "score": "0"
+        },
+        {
+            "nom": "mbaye",
+            "prenom": "tahir",
+            "login": "joeurg@gmail.com",
+            "password": "yflyvlvyuA2",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "Adama",
+            "login": "joueurazer@gmail.com",
+            "password": "A2zert",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "mbaye",
+            "prenom": "test",
+            "login": "lang@gmail.com",
+            "password": "A2zert",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "test",
+            "login": "Adama78@gmail.com",
+            "password": "nabousoum98",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "Adama",
+            "login": "joucvbbeur@gmail.com",
+            "password": "joucvbbeur123",
+            "role": "ROLE_ADMIN",
+            "score": "0"
+        },
+        {
+            "nom": "sx",
+            "prenom": "tahir",
+            "login": "Adamaglklklueye451@gmail.com",
+            "password": "glklklueye45",
+            "role": "ROLE_ADMIN",
+            "score": "0"
+        },
+        {
+            "nom": "diop",
+            "prenom": "Adama",
+            "login": "Adamagueye451@gmail.com",
+            "password": "Adamagueye451",
+            "role": "ROLE_ADMIN",
+            "score": "0"
         }
     ]
 }

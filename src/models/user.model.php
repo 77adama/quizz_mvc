@@ -40,3 +40,16 @@ function find_user_login_password(string $login,string $password):array{
         );
         array_to_json("users",$data);
     }
+     
+function test_email_unique(string $login){
+    $users=json_to_array("users");
+    foreach ($users as $user) 
+    {
+        if($user['login']==$login)
+        {
+           return true;
+        } 
+     
+    }
+    return false;
+}

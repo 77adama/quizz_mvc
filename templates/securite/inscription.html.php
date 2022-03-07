@@ -52,6 +52,10 @@ if(isset($_SESSION[KEY_ERRORS])){
                             <?php if(isset($errors['login'])): ?>
                                 <small style="color:red"> <?= $errors['login']; ?> </small>
                                 <?php endif ?><br>
+                                 
+                                <?php  if(isset($errors['emailExiste'])): ?>
+                                <small style="color:red"> <?= $errors['emailExiste']; ?> </small>
+                                <?php endif ?><br>
                             <div class="form-control">
                                 <label><b>LOGIN</b></label>
                                 <input id="login" type="text" placeholder="abababab" name="login" >
@@ -75,19 +79,9 @@ if(isset($_SESSION[KEY_ERRORS])){
                                 <input id="password2" type="password" placeholder="Confirm Password" name="confirmPassword" >
                                 <small>Error message</small>
                             </div>
-                                <div id="divavtr">
-                                    <b id="avtr">
-                                        Avatar
-                                    </b>
-                                    <button id="btnavtr">coisir un fichier</button>
-                                </div>
+                               
                             <button type="submit" class="fot-btn2"> creer un compte</button> 
-                            
-                        <?php
-                            if(isset($message)){
-                                echo $message;
-                            }
-                        ?>
+                            <a class="ac" href="<?=WEB_ROOT?>">se connecter</a>
                         </form>
                     </div>
                </div>

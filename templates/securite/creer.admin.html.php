@@ -1,3 +1,9 @@
+<?php 
+if(isset($_SESSION[KEY_ERRORS])){
+    $errors=$_SESSION[KEY_ERRORS];
+    unset($_SESSION[KEY_ERRORS]);
+   }
+?>
 <div class="inscri">
                  <div id="left">
                    <div id="text">
@@ -29,6 +35,9 @@
                             <?php if(isset($errors['login'])): ?>
                                 <small style="color:red"> <?= $errors['login']; ?> </small>
                                 <?php endif ?><br>
+                                <?php  if(isset($errors['emailExiste'])): ?>
+                                <small style="color:red"> <?= $errors['emailExiste']; ?> </small>
+                                <?php endif ?><br>
                             <div class="form-control3" class="control">
                                 <label><b>LOGIN</b></label></br>
                                 <input id="login" type="text" placeholder="abababab" name="login" ></br>
@@ -57,11 +66,7 @@
                                 <button class="btnfichier">Choisir un fichier</button>
                             </div>
                             <button type="submit" class="fot-btn2"> créer  compte</button> 
-                            <?php
-                            if(isset($message)){
-                                echo $message;
-                            }
-                        ?>
+                    
                         </form>
                     </div>
                     </div>

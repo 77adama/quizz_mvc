@@ -36,7 +36,6 @@ function testPassword(input){
     if(champ<6 || (!number.test(champ)) || (!letter.test(champ))){
        return false
     }
-    
     else{
        return true;
     }
@@ -73,14 +72,15 @@ function checkRequred(tabInput){
     });
 }
 function comparePassword(input1,input2){
-    if (input1.value!=input2.value) {
-        showError(input2, 'les 2 mots de passe ne sont pas les meme')
+    if (input1.value === input2.value) {
+        return true;
     }
+    showError(input2, 'les 2 mots de passe ne sont pas les meme')
+    return false;
 }
 
-
 form.addEventListener('submit', function(e){
-    if (!testEmail(login) || !testPassword(password) ){
+    if (!testEmail(login) || !testPassword(password) || !comparePassword(password,confirmPassword)){
         e.preventDefault();
         checkRequred([nom, prenom, login, password, confirmPassword])
         checkEmail(login)
