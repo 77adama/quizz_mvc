@@ -25,7 +25,7 @@
               <?php if(isset($errors['login'])): ?>
                  <small style="color:red"> <?= $errors['login']; ?> </small>
                  <?php endif ?><br>
-              <div class="form-control">
+                  <div class="form-control">
                 <label>Login</label> <br>
                 <input type="text" name="login" id="login" placeholder="Login"> 
                 <img class="eml" src="<?=WEB_ROOT."img/ic-login.png"?>" alt=""> <br>

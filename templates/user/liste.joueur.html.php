@@ -8,7 +8,7 @@
                             <th class="th2">Prenom</th>
                             <th class="th3">Score</th>
                         </tr>
-                        <?php foreach($data as $value):?>
+                        <?php foreach($items as $value):?>
                         <tr>
                             <td class="td1"><?=$value['nom']?></td>
                             <td class="td2"><?=$value['prenom']?></td>
@@ -18,4 +18,12 @@
                     </table>
     </div>
 </div>
-<div class="inputt"><input class="submitt" type="submit" value="suivant"></div>
+<div class="input">
+    <?php if($page != 1):?>
+    <button class="btn1"><a href="http://localhost:8000/?controller=user&action=liste.joueur&page=<?=$page-1;?>">precedent</a></button>
+    <?php endif?>
+    <?php 
+    if($page < $totalPages):?>
+    <button class="btn2"><a href="http://localhost:8000/?controller=user&action=liste.joueur&page=<?=$page+1;?>">suivant</a></button>
+    <?php endif?>
+</div>

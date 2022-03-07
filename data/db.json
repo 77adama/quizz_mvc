@@ -117,7 +117,7 @@
             "prenom": "Adama",
             "login": "joucvbbeur@gmail.com",
             "password": "joucvbbeur123",
-            "role": "ROLE_ADMIN",
+            "role": "ROLE_JOUEUR",
             "score": "0"
         },
         {
@@ -125,15 +125,7 @@
             "prenom": "tahir",
             "login": "Adamaglklklueye451@gmail.com",
             "password": "glklklueye45",
-            "role": "ROLE_ADMIN",
-            "score": "0"
-        },
-        {
-            "nom": "diop",
-            "prenom": "Adama",
-            "login": "Adamagueye451@gmail.com",
-            "password": "Adamagueye451",
-            "role": "ROLE_ADMIN",
+            "role": "ROLE_JOUEUR",
             "score": "0"
         }
     ]

@@ -7,6 +7,8 @@ if(isset($_REQUEST['controller']) ){
     case "user" :
     require_once(PATH_SRC."controllers/user.controllers.php");
     break;
+    default:
+    require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."pageErreur.html.php");
     }
     }else{
     require_once(PATH_SRC."controllers/securite.controllers.php");

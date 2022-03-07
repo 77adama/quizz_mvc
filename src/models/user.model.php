@@ -7,10 +7,12 @@ function find_user_login_password(string $login,string $password):array{
     }
     return [];
     }
-
+        //on lui donne on role et il return un tableau
     function find_users(string $role):array{ 
+        //recuper tous les utilisateurs se trouvant dans le fichier json
         $users=json_to_array("users");
         $result=[];
+        //parcourir et on cherche les utilisateurs dont le role est egale au role q'on a definit 
         foreach ($users as $user){
             if($user['role']==$role)
                 $result[]=$user;

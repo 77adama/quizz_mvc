@@ -57,7 +57,21 @@ if($_SERVER["REQUEST_METHOD"]=="GET"){
 function lister_joueur() {
     //appel du modèle
     ob_start();
-    $data= find_users(ROLE_JOUEUR);
+    $data = find_users(ROLE_JOUEUR);
+    //intval Retourne la valeur numérique entière équivalente d'une variable
+    $page = (!empty($_GET['page']) && $_GET['page'] > 0) ? intval($_GET['page']) : 1;
+    //définir le nombre de lignes à afficher par page, et récupérer le total de page qu'on aura
+    $limit = 6;
+    //ceil Arrondit au nombre supérieur
+    $totalPages = ceil(count($data) / $limit);
+    //sécuriser" notre pagination pour pas que quelqu'un change l'URL
+    $page = max($page, 1);
+    $page = min($page, $totalPages);
+    // offset => indice ou il va commencer a afficher
+    $offset = ($page - 1) * $limit;
+    $offset = ($offset < 0) ? 0 : $offset;
+    //array_slice  Extrait une portion de tableau
+    $items = array_slice($data, $offset, $limit);
     require_once(PATH_VIEWS."user". DIRECTORY_SEPARATOR."liste.joueur.html.php");
     $content_for_views=ob_get_clean();
     require_once(PATH_VIEWS."user". DIRECTORY_SEPARATOR."accueil.html.php");

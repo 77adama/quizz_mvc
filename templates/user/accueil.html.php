@@ -33,6 +33,7 @@
                         <img src="<?=WEB_ROOT."img/ic-liste.png"?>" class="img1" alt="">
                     </div>
                     <div class="hov">
+                        <!-- definition du lien lui dire..... -->
                          <a href="<?=WEB_ROOT."?controller=securite&action=creer.admin"?>">Créer Admin</a> 
                          <img src="<?=WEB_ROOT."img/ic-ajout.png"?>" class="img2" alt="">
                     </div>

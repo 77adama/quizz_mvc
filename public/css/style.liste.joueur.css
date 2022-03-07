@@ -46,26 +46,21 @@ table{
     color: #8b7e6e;
     font-size: 30px;
 }
-.inputt{
-    position: relative;
-    background-color: #39ddd6;
-    width: 14%;
-    left: 82%;
-    height: 8%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-   
+.btn1{
+    margin-top: -1%;
+    height: 45px;
+    margin-left: 10%;
+    padding: 10px;
+    width: 170px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-.submitt{
-    position: relative;
-    
-    border: none;
-    background-color: #39ddd6;
-    color: white;
-    font-size: 24px;
-    border-radius: 1px;
-
+.btn2{
+    margin-top: -1%;
+    height: 45px;
+    margin-left: 30%;
+    padding: 10px;
+    width: 170px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
- 
