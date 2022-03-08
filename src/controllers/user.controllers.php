@@ -32,7 +32,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 if($_SERVER["REQUEST_METHOD"]=="GET"){
     if(isset($_REQUEST['action'])){
         if(!is_connect()){
-            header("location:".WEB_ROOT);
+            header("location:".PATH_VIEWS);
             exit();
         }
        if($_REQUEST['action']=="accueil"){  

@@ -127,6 +127,31 @@
             "password": "glklklueye45",
             "role": "ROLE_JOUEUR",
             "score": "0"
+        },
+        {
+            "nom": "mmmm",
+            "prenom": "mars",
+            "login": "adhhmin@gmail.com",
+            "password": "nabousoum98",
+            "role": "ROLE_JOUEUR",
+            "score": "0"
+        },
+        {
+            "nom": "sx",
+            "prenom": "zae",
+            "login": "admib@gmail.com",
+            "password": "admib123",
+            "role": "ROLE_ADMIN",
+            "score": "0"
+        },
+        {
+            "nom": "gaye",
+            "prenom": "ami",
+            "login": "jeteste123@gmail.com",
+            "password": "nabousoum98",
+            "role": "ROLE_ADMIN",
+            "score": "0"
         }
     ]
+
 }

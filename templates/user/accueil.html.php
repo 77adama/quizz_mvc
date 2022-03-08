@@ -50,6 +50,7 @@
             </div>
             <div class="section_droite">
                 <?php 
+                // son role c'est de recupere le contenu de lister
                     echo $content_for_views;
                 ?>
             </div>

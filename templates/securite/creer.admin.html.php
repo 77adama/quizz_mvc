@@ -61,10 +61,7 @@ if(isset($_SESSION[KEY_ERRORS])){
                                 <input id="password2" type="password" placeholder="Confirm Password" name="confirmPassword" ></br>
                                 <small>Error message</small>
                             </div>
-                            <div class="btnavtr">
-                                <b class="avtr">Avatar</b>
-                                <button class="btnfichier">Choisir un fichier</button>
-                            </div>
+                  
                             <button type="submit" class="fot-btn2"> créer  compte</button> 
                     
                         </form>
