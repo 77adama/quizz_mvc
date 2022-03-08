@@ -43,7 +43,7 @@
               </div>
               <div id="footer">
                 <input type="submit" value="connexion" id="submit">
-                <a href="<?=WEB_ROOT."?controller=securite&action=inscription"?>">s'inscrire pour jouer</a>
+                <a href="<?=WEB_ROOT."?controller=securite&action=inscription"?>">s'inscrire pour jouer ?</a>
               </div>
         </form>
       </div>

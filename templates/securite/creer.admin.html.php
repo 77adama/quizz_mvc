@@ -14,6 +14,9 @@ if(isset($_SESSION[KEY_ERRORS])){
                             <form id="form" action="<?= WEB_ROOT?>" method="POST">
                             <input type="hidden" name="controller" value="securite">
                             <input type="hidden" name="action" value="creer.admin">
+                            <?php  if(isset($errors['emailExiste'])): ?>
+                                <span style="color:red"> <?= $errors['emailExiste']; ?> </span>
+                                <?php endif ?><br>
                             <?php if(isset($errors['prenom'])): ?>
                                 <small style="color:red"> <?= $errors['prenom']; ?> </small>
                                 <?php endif ?><br>
@@ -35,9 +38,7 @@ if(isset($_SESSION[KEY_ERRORS])){
                             <?php if(isset($errors['login'])): ?>
                                 <small style="color:red"> <?= $errors['login']; ?> </small>
                                 <?php endif ?><br>
-                                <?php  if(isset($errors['emailExiste'])): ?>
-                                <small style="color:red"> <?= $errors['emailExiste']; ?> </small>
-                                <?php endif ?><br>
+                                
                             <div class="form-control3" class="control">
                                 <label><b>LOGIN</b></label></br>
                                 <input id="login" type="text" placeholder="abababab" name="login" ></br>
