@@ -77,9 +77,6 @@ function connexion(string $login, string $password):void{
        if(count($user)!=0){
             //utilisateur existe
             $_SESSION[KEY_USER_CONNECT]=$user;
-            
-            //?controller=user&action=accueil
-            // http://localhost:8080/quizz_mvc/public/?controller=user&action=accueil
             header("location:".WEB_ROOT."?controller=user&action=accueil");     
             exit();
        }else{

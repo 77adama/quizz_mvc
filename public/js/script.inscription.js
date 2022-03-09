@@ -4,6 +4,24 @@ const prenom=document.getElementById('prenom')
 const login=document.getElementById('login')
 const password=document.getElementById('password')
 const confirmPassword=document.getElementById('password2')
+const imgDiv=document.getElementById('right');
+const photo =document.getElementById('photo');
+const file=document.getElementById('avatar');
+const uploadBtn=document.getElementById('uploadBtn');
+
+//
+file.addEventListener('change', function(){
+    const choosedFile= this.files[0];
+    if (choosedFile){
+        const reader  = new FileReader();
+        reader.addEventListener('load',function(){
+            photo.setAttribute('src', reader.result);
+
+        });
+        reader.readAsDataURL(choosedFile);
+    }
+})
+
 
 
 function showError(input,message){

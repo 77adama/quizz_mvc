@@ -86,8 +86,11 @@ if(isset($_SESSION[KEY_ERRORS])){
                     </div>
                </div>
                <div id="right">
-                        <img src="<?=WEB_ROOT."img/avatar.jpg"?>" alt="">
-                        <h3>Avatar du joueur</h3>
+                   <label for="avatar" id="uploadBtn">
+                    <img id="photo" src="<?=WEB_ROOT."img/avatar.jpg"?>" alt="">
+                   </label>
+                    <input type="file" id="avatar" name="avatar"  accept=".jpg, .jpeg, .png">
+                     <h3>Avatar du joueur</h3>
                </div>
             </div>
         </div>

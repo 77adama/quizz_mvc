@@ -20,6 +20,7 @@ function find_user_login_password(string $login,string $password):array{
             return $result;
     }
     function insert_users($nom,$prenom,$login,$password){
+        //permer d'inserer
         $data=array(
             'nom'=>$nom,
             'prenom'=>$prenom,

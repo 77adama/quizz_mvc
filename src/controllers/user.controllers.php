@@ -32,7 +32,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 if($_SERVER["REQUEST_METHOD"]=="GET"){
     if(isset($_REQUEST['action'])){
         if(!is_connect()){
-            header("location:".PATH_VIEWS);
+            header("location:".WEB_ROOT);
             exit();
         }
        if($_REQUEST['action']=="accueil"){  
@@ -70,7 +70,7 @@ function lister_joueur() {
     // offset => indice ou il va commencer a afficher
     $offset = ($page - 1) * $limit;
     $offset = ($offset < 0) ? 0 : $offset;
-    //array_slice  Extrait une portion de tableau
+    //Grâce à la fonction array_slice, on coupe notre tableau sans difficulté.
     $items = array_slice($data, $offset, $limit);
     require_once(PATH_VIEWS."user". DIRECTORY_SEPARATOR."liste.joueur.html.php");
     $content_for_views=ob_get_clean();
