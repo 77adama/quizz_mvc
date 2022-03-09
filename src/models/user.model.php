@@ -19,7 +19,7 @@ function find_user_login_password(string $login,string $password):array{
             }
             return $result;
     }
-    function insert_users($nom,$prenom,$login,$password){
+    function insert_users($nom,$prenom,$login,$password,$avatar){
         //permer d'inserer
         $data=array(
             'nom'=>$nom,
@@ -27,7 +27,8 @@ function find_user_login_password(string $login,string $password):array{
             'login'=>$login,
             'password'=>$password,
             'role'=>"ROLE_JOUEUR",
-            'score'=>"0"
+            'score'=>"0",
+            'avatar'=>$avatar
         );
         array_to_json("users",$data);
     }

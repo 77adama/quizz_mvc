@@ -5,6 +5,17 @@ if(isset($_SESSION[KEY_ERRORS])){
     unset($_SESSION[KEY_ERRORS]);
    }
 ?>
+<?php
+    if (isset($_POST['submit'])){
+        if(array_key_exists('avatar', $_FILES) && array_key_exists('avatar', $_FILES)){
+            $img_name=$_FILES['avatar']['name'];
+            $tmp_img_name=$_FILES['avatar']['tmp_name'];
+            $folder = WEB_PUBLIC."uploads".DIRECTORY_SEPARATOR;
+            move_uploaded_file($tmp_img_name,$folder.$img_name );
+        }
+     
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +39,7 @@ if(isset($_SESSION[KEY_ERRORS])){
                         <h2 id="h2oc">Pour tester votre niveau de culture générale</h2>
                     </div>
                     <div id="formulaire">
-                            <form id="form" action="<?= WEB_ROOT?>" method="POST">
+                            <form id="form" action="<?= WEB_ROOT?>" method="POST" enctype='multipart/form-data'>
                             <input type="hidden" name="controller" value="user">
                             <input type="hidden" name="action" value="inscription">
                             <?php if(isset($errors['prenom'])): ?>
@@ -80,9 +91,9 @@ if(isset($_SESSION[KEY_ERRORS])){
                                 <small>Error message</small>
                             </div>
                                
-                            <button type="submit" class="fot-btn2"> creer un compte</button> 
+                            <input value="creer un compte" name="submit" type="submit" class="fot-btn2"> 
                             <a class="ac" href="<?=WEB_ROOT?>">se connecter</a>
-                        </form>
+                      
                     </div>
                </div>
                <div id="right">
@@ -92,6 +103,7 @@ if(isset($_SESSION[KEY_ERRORS])){
                     <input type="file" id="avatar" name="avatar"  accept=".jpg, .jpeg, .png">
                      <h3>Avatar du joueur</h3>
                </div>
+                 </form>
             </div>
         </div>
         <script src="<?= WEB_ROOT."js/script.inscription.js" ?>"></script>

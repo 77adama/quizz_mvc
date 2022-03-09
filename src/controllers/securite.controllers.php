@@ -117,6 +117,8 @@ function creerAdmin(string $nom ,string $prenom,  string $login, string $passwor
     if(count($errors)==0){
         valid_email('login',$login,$errors);
         valid_password('login',$password,$errors);
+        
+
     }else{
         $_SESSION[KEY_ERRORS]=$errors;
         header("location:".WEB_ROOT."?controller=securite&action=creer.admin");

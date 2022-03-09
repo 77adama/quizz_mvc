@@ -28,3 +28,4 @@ define("WEB_ROOT","http://localhost:8000/");
 define("KEY_ERRORS","errors");
 //clés d'accé à l'utilisateur connecter
 define("KEY_USER_CONNECT","user-connect");
+define("WEB_PUBLIC",str_replace("index.php","",$_SERVER['SCRIPT_FILENAME']));

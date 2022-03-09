@@ -11,10 +11,11 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
           $login=$_POST['login'];
           $password=$_POST['password'];
           $confirmPassword=$_POST['confirmPassword'];
-          
+          $avatar=$_POST['avatar'];
+          $name=$_FILES['avatar']['name'];
           inscription($nom, $prenom, $login, $password, $confirmPassword);
           if(test_email_unique($login)==false){
-            insert_users($nom, $prenom, $login, $password);
+            insert_users($nom, $prenom, $login, $password,$name);
             echo "<p style='position:absolute;color:green;font-size:30px;margin-left:10%'>inscription reussie!!<p>";
             require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."inscription.html.php");
           }
