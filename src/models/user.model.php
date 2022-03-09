@@ -33,14 +33,16 @@ function find_user_login_password(string $login,string $password):array{
         array_to_json("users",$data);
     }
     
-    function insert_usersA($nom,$prenom,$login,$password){
+    function insert_usersA($nom,$prenom,$login,$password, $avatar){
         $data=array(
             'nom'=>$nom,
             'prenom'=>$prenom,
             'login'=>$login,
             'password'=>$password,
             'role'=>"ROLE_ADMIN",
-            'score'=>"0"
+            'score'=>"0",
+            'avatar'=>$avatar
+
         );
         array_to_json("users",$data);
     }

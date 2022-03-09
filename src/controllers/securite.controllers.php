@@ -18,9 +18,11 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         $login=$_POST['login'];
         $password=$_POST['password'];
         $confirmPassword=$_POST['confirmPassword'];
+        $avatar=$_POST['avatar'];
+          $name=$_FILES['avatar']['name'];
         creerAdmin($nom, $prenom, $login, $password,$confirmPassword);
         if(test_email_unique($login)==false){
-            insert_usersA($nom, $prenom, $login, $password);
+            insert_usersA($nom, $prenom, $login, $password ,$name);
             header("location:".WEB_ROOT."?controller=securite&action=creer.admin");
             exit();
         }else{

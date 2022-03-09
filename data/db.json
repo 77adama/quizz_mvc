@@ -312,6 +312,33 @@
             "role": "ROLE_JOUEUR",
             "score": "0",
             "avatar": "caz.png"
+        },
+        {
+            "nom": "mbaye",
+            "prenom": "dae",
+            "login": "dafenf@gmail.com",
+            "password": "dafenf12",
+            "role": "ROLE_ADMIN",
+            "score": "0",
+            "avatar": null
+        },
+        {
+            "nom": "gvavcq",
+            "prenom": "mou",
+            "login": "jgkocvx@gmail.com",
+            "password": "jgkocvx12",
+            "role": "ROLE_ADMIN",
+            "score": "0",
+            "avatar": "Capture d\u2019\u00e9cran du 2021-12-22 12-53-13.png"
+        },
+        {
+            "nom": "FSGSDH",
+            "prenom": "fdgzgq",
+            "login": "SBSHJD@gmail.com",
+            "password": "SBSHJD12",
+            "role": "ROLE_JOUEUR",
+            "score": "0",
+            "avatar": "caaaaaa.png"
         }
     ]
 }

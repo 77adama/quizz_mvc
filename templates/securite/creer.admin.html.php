@@ -4,6 +4,17 @@ if(isset($_SESSION[KEY_ERRORS])){
     unset($_SESSION[KEY_ERRORS]);
    }
 ?>
+<?php
+    if (isset($_POST['submit'])){
+        if(array_key_exists('avatar', $_FILES) && array_key_exists('avatar', $_FILES)){
+            $img_name=$_FILES['avatar']['name'];
+            $tmp_img_name=$_FILES['avatar']['tmp_name'];
+            $folder = WEB_PUBLIC."uploads".DIRECTORY_SEPARATOR;
+            move_uploaded_file($tmp_img_name,$folder.$img_name );
+        }
+     
+    }
+?>
 <div class="inscri">
                  <div id="left">
                    <div id="text">
@@ -11,7 +22,7 @@ if(isset($_SESSION[KEY_ERRORS])){
                         <h2 id="h2oc">Pour proposer des quizz</h2>
                     </div>
                     <div id="formulaire">
-                            <form id="form" action="<?= WEB_ROOT?>" method="POST">
+                            <form id="form" action="<?= WEB_ROOT?>" method="POST" enctype='multipart/form-data'>
                             <input type="hidden" name="controller" value="securite">
                             <input type="hidden" name="action" value="creer.admin">
                             <?php  if(isset($errors['emailExiste'])): ?>
@@ -63,14 +74,19 @@ if(isset($_SESSION[KEY_ERRORS])){
                                 <small>Error message</small>
                             </div>
                   
-                            <button type="submit" class="fot-btn2"> créer  compte</button> 
+                            <input name="submit" type="submit" class="fot-btn2" value="créer compte">  
                     
-                        </form>
+                       
                     </div>
                     </div>
                     <div id="right">
-                        <img class="ppadmin" src="<?=WEB_ROOT."img/avatar.jpg"?>" alt="">
-                        <h3 class="nomadmin">Avatar Admin</h3>
+                    <label for="avatar" id="uploadBtn">
+                        <img id="photoo" src="<?=WEB_ROOT."img/avatar.jpg"?>" alt="">
+                    </label>
+                        <input type="file" id="avatar" name="avatar"  accept=".jpg, .jpeg, .png">
+                        <h3 class="acc">Avatar Admin</h3>
+        
                     </div>
+                    </form>
                  </div>               
                 

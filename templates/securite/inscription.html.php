@@ -40,69 +40,69 @@ if(isset($_SESSION[KEY_ERRORS])){
                     </div>
                     <div id="formulaire">
                             <form id="form" action="<?= WEB_ROOT?>" method="POST" enctype='multipart/form-data'>
-                            <input type="hidden" name="controller" value="user">
-                            <input type="hidden" name="action" value="inscription">
-                            <?php if(isset($errors['prenom'])): ?>
-                                <small style="color:red"> <?= $errors['prenom']; ?> </small>
-                                <?php endif ?><br>
-                            <div class="form-control">
-                                <label><b>PRENOM</b></label> 
-                                <input id="prenom" type="text" placeholder="AAAAA" name="prenom" >
-                                <small>Error message</small>
-                            </div>
+                                <input type="hidden" name="controller" value="user">
+                                <input type="hidden" name="action" value="inscription">
+                                <?php if(isset($errors['prenom'])): ?>
+                                    <small style="color:red"> <?= $errors['prenom']; ?> </small>
+                                    <?php endif ?><br>
+                                <div class="form-control">
+                                    <label><b>PRENOM</b></label> 
+                                    <input id="prenom" type="text" placeholder="AAAAA" name="prenom" >
+                                    <small>Error message</small>
+                                </div>
 
-                            <?php if(isset($errors['nom'])): ?>
-                                <small style="color:red"> <?= $errors['nom']; ?> </small>
-                                <?php endif ?><br>
-                            <div class="form-control">
-                                <label><b>NOM</b></label>
-                                <input id="nom" type="text" placeholder="BBBBB" name="nom" >
-                                <small>Error message</small>
-                            </div>
+                                <?php if(isset($errors['nom'])): ?>
+                                    <small style="color:red"> <?= $errors['nom']; ?> </small>
+                                    <?php endif ?><br>
+                                <div class="form-control">
+                                    <label><b>NOM</b></label>
+                                    <input id="nom" type="text" placeholder="BBBBB" name="nom" >
+                                    <small>Error message</small>
+                                </div>
 
-                            <?php if(isset($errors['login'])): ?>
-                                <small style="color:red"> <?= $errors['login']; ?> </small>
-                                <?php endif ?><br>
-                                 
-                                <?php  if(isset($errors['emailExiste'])): ?>
-                                <small style="color:red"> <?= $errors['emailExiste']; ?> </small>
-                                <?php endif ?><br>
-                            <div class="form-control">
-                                <label><b>LOGIN</b></label>
-                                <input id="login" type="text" placeholder="abababab" name="login" >
-                                <small>Error message</small>
-                            </div>
+                                <?php if(isset($errors['login'])): ?>
+                                    <small style="color:red"> <?= $errors['login']; ?> </small>
+                                    <?php endif ?><br>
+                                    
+                                    <?php  if(isset($errors['emailExiste'])): ?>
+                                    <small style="color:red"> <?= $errors['emailExiste']; ?> </small>
+                                    <?php endif ?><br>
+                                <div class="form-control">
+                                    <label><b>LOGIN</b></label>
+                                    <input id="login" type="text" placeholder="abababab" name="login" >
+                                    <small>Error message</small>
+                                </div>
 
-                            <?php if(isset($errors['password'])): ?>
-                                <small style="color:red"> <?= $errors['password']; ?> </small>
-                                <?php endif ?><br>
-                            <div class="form-control">
-                                <label><b>PASSWORD</b></label>
-                                <input id="password" type="password" placeholder="Password" name="password" >
-                                <small>Error message</small>
-                            </div>
+                                <?php if(isset($errors['password'])): ?>
+                                    <small style="color:red"> <?= $errors['password']; ?> </small>
+                                    <?php endif ?><br>
+                                <div class="form-control">
+                                    <label><b>PASSWORD</b></label>
+                                    <input id="password" type="password" placeholder="Password" name="password" >
+                                    <small>Error message</small>
+                                </div>
 
-                            <?php if(isset($errors['confirmPassword'])): ?>
-                                <small style="color:red"> <?= $errors['confirmPassword']; ?> </small>
-                                <?php endif ?><br>
-                            <div class="form-control">
-                                <label><b>CONFIRM PASSWORD</b></label>
-                                <input id="password2" type="password" placeholder="Confirm Password" name="confirmPassword" >
-                                <small>Error message</small>
-                            </div>
-                               
-                            <input value="creer un compte" name="submit" type="submit" class="fot-btn2"> 
-                            <a class="ac" href="<?=WEB_ROOT?>">se connecter</a>
-                      
-                    </div>
-               </div>
-               <div id="right">
-                   <label for="avatar" id="uploadBtn">
-                    <img id="photo" src="<?=WEB_ROOT."img/avatar.jpg"?>" alt="">
-                   </label>
-                    <input type="file" id="avatar" name="avatar"  accept=".jpg, .jpeg, .png">
-                     <h3>Avatar du joueur</h3>
-               </div>
+                                <?php if(isset($errors['confirmPassword'])): ?>
+                                    <small style="color:red"> <?= $errors['confirmPassword']; ?> </small>
+                                    <?php endif ?><br>
+                                <div class="form-control">
+                                    <label><b>CONFIRM PASSWORD</b></label>
+                                    <input id="password2" type="password" placeholder="Confirm Password" name="confirmPassword" >
+                                    <small>Error message</small>
+                                </div>
+                                
+                                <input value="creer un compte" name="submit" type="submit" class="fot-btn2"> 
+                                <a class="ac" href="<?=WEB_ROOT?>">se connecter</a>
+                        
+                        </div>
+                </div>
+                <div id="right">
+                    <label for="avatar" id="uploadBtn">
+                        <img id="photo" src="<?=WEB_ROOT."img/avatar.jpg"?>" alt="">
+                    </label>
+                        <input type="file" id="avatar" name="avatar"  accept=".jpg, .jpeg, .png">
+                        <h3>Avatar du joueur</h3>
+                </div>
                  </form>
             </div>
         </div>
