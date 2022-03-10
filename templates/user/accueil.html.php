@@ -60,5 +60,6 @@
         <?php endif ?>
     </div>
     <script src="<?= WEB_ROOT."js/script.creer.admin.js" ?>"></script>
+    
 </body>
 </html>
