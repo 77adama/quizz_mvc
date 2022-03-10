@@ -101,6 +101,7 @@ function logout(){
     exit();
 }
 
+
 function creer_admin(){
         ob_start();
     // $data= find_users(ROLE_ADMIN);

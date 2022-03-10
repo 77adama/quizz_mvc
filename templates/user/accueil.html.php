@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="<?=WEB_ROOT.'css'.DIRECTORY_SEPARATOR."style.accueil.css"?>">
     <link rel="stylesheet" href="<?=WEB_ROOT.'css'.DIRECTORY_SEPARATOR."style.liste.joueur.css"?>">
     <link rel="stylesheet" href="<?=WEB_ROOT.'css'.DIRECTORY_SEPARATOR."style.creer.admin.css"?>">
+    <link rel="stylesheet" href="<?=WEB_ROOT.'css'.DIRECTORY_SEPARATOR."style.question.css"?>">
+
 </head>
 <body>
     <nav>     
@@ -42,7 +44,7 @@
                          <img src="<?=WEB_ROOT."img/ic-liste.png" ?>"class="img2" alt="">
                     </div>
                     <div class="hov">
-                          <a href="">Créer Question</a>
+                          <a href="<?=WEB_ROOT."?controller=question&action=creer.question"?>">Créer Question</a>
                           <img src="<?=WEB_ROOT."img/ic-ajout.png"?>" class="img1" alt="">
                     </div>
                   

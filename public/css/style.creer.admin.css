@@ -104,8 +104,9 @@ b{
     height: 10%;
     width: 25%;
     position: absolute;
+    bottom: 0%;
     right: 58%;
-    bottom: 5px;
+    color: white;
    background-color: #50becf;
 } 
 .ppadmin{

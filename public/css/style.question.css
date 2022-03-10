@@ -1,0 +1,126 @@
+.question{
+    display: flex;
+    margin: 1%;
+    flex-direction: column; 
+}
+#formm{
+    display: flex;
+    flex-direction: column;
+    width: 90%; 
+}
+form #divv{
+    display: flex;
+    margin-bottom: 3%;
+    margin-left: 1%;
+}
+#BTN{
+    right: 20%;
+    height: 7%;
+    bottom: 10%;
+}
+.tq{
+   margin-bottom: 2%;
+   text-align: center;
+   color: #51bfd0;
+}
+.textarea{
+   display: flex;
+  align-items: center;
+}
+textarea{
+    border-bottom: 2px solid #51bfd0;
+    border-right: 2px solid #51bfd0;
+    border-top: none;
+    border-left: none;
+}
+.nmbrepoint{
+    display: flex;
+    align-items: center;
+}
+#nmbrP{
+    width: 13%;
+   padding: 3%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-bottom: 2px solid #51bfd0;
+   border-right: 2px solid #51bfd0;
+   border-top: none;
+   border-left: none;
+}
+label{
+    font-size: 1.2em;
+    margin-right: 1%;
+    color: black;
+}
+.typereonse{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+select{
+    padding: 1%;
+    width: 60%;
+    border-bottom: 2px solid #51bfd0;
+   border-right: 2px solid #51bfd0;
+   border-top: none;
+   border-left: none;
+}
+option{
+    border: none;
+}
+.reponse{
+    display: flex;
+    align-items: center;
+    
+    margin-left: 1%;
+}
+#rpns{
+    padding: 2%;
+    width: 30%;
+    border-bottom: 2px solid #51bfd0;
+   border-right: 2px solid #51bfd0;
+   border-top: none;
+   border-left: none;
+   color: #51bfd0;
+   margin-left: 2%;
+}
+.ajout-reponse{
+    bottom: 2%;
+    height: 100%;
+    left: 80%;
+}
+#btnajout{
+    background-color: whitesmoke;
+    height: 100%;
+    right: 10%;
+    
+    
+}
+#checkbox{
+    position: absolute;
+    right: -13%;
+}
+#radio{
+    position: absolute;
+    height: 3%;
+    
+    right: -14.5%;
+}
+#delete{
+    right: 25%;
+    
+    width: 2%;
+    background-color: white;
+}
+.ic-supprimer{
+    left: 73%;
+    height: 4%;
+}
+.repons{
+    margin-left: 20%;
+}
+.question-wrap{
+    height: 70%;
+    overflow-y: scroll;
+}
