@@ -2,7 +2,17 @@
 require_once(PATH_SRC."models".DIRECTORY_SEPARATOR."question.model.php");
 if($_SERVER["REQUEST_METHOD"]=="POST"){
    if(isset($_REQUEST['action'])){
-
+       if($_REQUEST['action']=="creer.question"){
+            $question= $_POST['question'];
+            $nbrPoints=$_POST['nbrPoints'];
+            $input=$_POST['reponses'];
+            foreach($input as $index=>$input){
+                $reponses[$index]=$input;
+            }
+            insert_question($question, $nbrPoints, $reponses);
+            header("location:".WEB_ROOT."?controller=question&action=creer.question");
+            exit();
+        }
    }
 }
 

@@ -2,14 +2,16 @@
     <h2 class="tq">PARAMETRER VOTRE QUESTION</h2>
    <div class="question-wrap" id="question-wrap">
         <form action="<?= WEB_ROOT?>" method="POST" id="formm"> 
+        <input type="hidden" name="controller" value="question">
+              <input type="hidden" name="action" value="creer.question">
                 <div id="divv" class="textarea">
 
                         <label for="">question</label>
-                        <textarea name="qtion" id="" cols="60" rows="5"></textarea>
+                        <textarea name="question" id="" cols="60" rows="5"></textarea>
                 </div>
                 <div id="divv" class="nmbrepoint">
                     <label for="nmbrP">nombres de points</label>
-                    <input type="number" id="nmbrP" name="nmbrP" min="1" max="10">
+                    <input type="number" id="nmbrP" name="nbrPoints" min="1" max="10">
                 </div>
                 <div id="divv" class="typereonse">
                     <label for=""> type de réponse</label>

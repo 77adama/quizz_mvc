@@ -339,6 +339,35 @@
             "role": "ROLE_JOUEUR",
             "score": "0",
             "avatar": "caaaaaa.png"
+        },
+        {
+            "nom": "diallo",
+            "prenom": "amadou telly",
+            "login": "amadoutelly@gmail.com",
+            "password": "telly123",
+            "role": "ROLE_JOUEUR",
+            "score": "0",
+            "avatar": "Capture d\u2019\u00e9cran du 2021-12-14 09-20-59.png"
+        }
+    ],
+    "questions": [
+        {
+            "question": "quel est le meilleur langage de programmation",
+            "nbrPoints": "10",
+            "reponses": [
+                "java",
+                "c",
+                "python",
+                "javascript"
+            ]
+        },
+        {
+            "question": "je teste",
+            "nbrPoints": "4",
+            "reponses": [
+                "fujufj",
+                "duhehuh"
+            ]
         }
     ]
 }

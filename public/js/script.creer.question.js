@@ -27,6 +27,7 @@ function ajouter() {
     const inputText=document.createElement('input')
     inputText.setAttribute('type', 'text')
     inputText.setAttribute('id', 'rpns')
+    inputText.setAttribute('name', 'reponses[]')
     divChamp.appendChild(labelChamp)
     divChamp.appendChild(inputText)
     
