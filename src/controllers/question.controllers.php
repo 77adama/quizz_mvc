@@ -6,10 +6,27 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             $question= $_POST['question'];
             $nbrPoints=$_POST['nbrPoints'];
             $input=$_POST['reponses'];
+            $typeRep=$_POST['select'];
+            $cor =$_POST['check'];
             foreach($input as $index=>$input){
                 $reponses[$index]=$input;
             }
-            insert_question($question, $nbrPoints, $reponses);
+            switch($typeRep){
+                case 'champDeTexte':
+                    $correct[]=$_POST['reponses'];
+                break;
+
+                case 'checkboxValue':
+                    foreach($cor as $index=>$cor){
+                        $correct[$index]=$cor;
+                    }
+                break;
+
+                case'radioValue':
+                        $correct[]=$_POST['check'];
+                    break;
+            }
+            insert_question($question, $nbrPoints, $reponses ,$correct);
             header("location:".WEB_ROOT."?controller=question&action=creer.question");
             exit();
         }

@@ -32,12 +32,20 @@ function ajouter() {
     divChamp.appendChild(inputText)
     
     switch(valeur_cherchee){
+        case 'champDeTexte':
+            //display none de btnAjout si le nombre d'élement = 1
+            if(nbrElement==1){
+                btnAjout.style.display='none'
+            }
+        break;
+
         case 'checkboxValue':
          //création input type checbox
             const inputChecbox=document.createElement('input')
             inputChecbox.setAttribute('type', 'checkbox')
             inputChecbox.setAttribute('id', 'checkbox')
-            inputChecbox.setAttribute('name', ' check')
+            inputChecbox.setAttribute('name', ' check[]')
+            inputChecbox.setAttribute('value', nbrElement)
             divChamp.appendChild(inputChecbox)
         break;
         case 'radioValue':
@@ -46,7 +54,8 @@ function ajouter() {
                 const inputradio=document.createElement('input')
                 inputradio.setAttribute('type', 'radio')
                 inputradio.setAttribute('id', 'radio')
-                inputradio.setAttribute('name', 'rad')
+                inputradio.setAttribute('name', 'check[]')
+                inputradio.setAttribute('value', nbrElement)
                 divChamp.appendChild(inputradio)
         break;
     }
@@ -58,7 +67,7 @@ function ajouter() {
     imageDelete.setAttribute('class', 'ic-supprimer')
     imageDelete.setAttribute('id', 'delete')
     imageDelete.src="../img/ic-supprimer.png"
-
+    
     imageDelete.addEventListener('click', function(){
         var parent =this.parentElement.parentElement;
         parent.removeChild(divChamp);

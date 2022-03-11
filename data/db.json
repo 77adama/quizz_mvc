@@ -368,6 +368,71 @@
                 "fujufj",
                 "duhehuh"
             ]
+        },
+        {
+            "question": ",kk,",
+            "nbrPoints": "3",
+            "reponses": [
+                "ikkk"
+            ],
+            "correct": [
+                null
+            ]
+        },
+        {
+            "question": "quel est mon nom?",
+            "nbrPoints": "3",
+            "reponses": [
+                "diop",
+                "diouf",
+                "ndiaye",
+                "soumare",
+                "sy"
+            ],
+            "correct": [
+                [
+                    "on"
+                ]
+            ]
+        },
+        {
+            "question": "je teste?",
+            "nbrPoints": "3",
+            "reponses": [
+                "ya pas"
+            ],
+            "correct": [
+                [
+                    "ya pas"
+                ]
+            ]
+        },
+        {
+            "question": "radio",
+            "nbrPoints": "5",
+            "reponses": [
+                "je sais pas",
+                "je sais",
+                "i dont care"
+            ],
+            "correct": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "question": "quel est le president du senegal?",
+            "nbrPoints": "5",
+            "reponses": [
+                "sonko",
+                "abdoulaye wade",
+                "macky sall"
+            ],
+            "correct": [
+                [
+                    "3"
+                ]
+            ]
         }
     ]
 }
