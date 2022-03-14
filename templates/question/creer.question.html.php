@@ -16,7 +16,7 @@
                 <div id="divv" class="typereonse">
                     <label for=""> type de réponse</label>
                     <select name="select" id="typeRep">
-                        <option value="">---Donnez le type de reponses---</option>
+                        <option value="choi">---Donnez le type de reponses---</option>
                         <option value="radioValue">  choix simple</option>
                         <option value="checkboxValue"> choix multiple</option>
                         <option value="champDeTexte">texte</option>

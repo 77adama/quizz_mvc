@@ -348,6 +348,69 @@
             "role": "ROLE_JOUEUR",
             "score": "0",
             "avatar": "Capture d\u2019\u00e9cran du 2021-12-14 09-20-59.png"
+        },
+        {
+            "nom": "gaye",
+            "prenom": "Moustapha",
+            "login": "gaye123@gmail.com",
+            "password": "Moustapha123",
+            "role": "ROLE_ADMIN",
+            "score": "0",
+            "avatar": "gaye123_ROLE_ADMIN"
+        },
+        {
+            "nom": "Moustapha",
+            "prenom": "Moustapha",
+            "login": "Moustapha@gmail.com",
+            "password": "Moustapha123",
+            "role": "ROLE_ADMIN",
+            "score": "0",
+            "avatar": "Moustapha_ROLE_ADMIN"
+        },
+        {
+            "nom": "mbaye",
+            "prenom": "gayewad",
+            "login": "admhjgj123in@gmail.com",
+            "password": "admhjgj123in",
+            "role": "ROLE_ADMIN",
+            "score": "0",
+            "avatar": "admhjgj123in_ROLE_ADMIN"
+        },
+        {
+            "nom": "gaye",
+            "prenom": "seynabou",
+            "login": "admi234n@gmail.com",
+            "password": "admi234n",
+            "role": "ROLE_ADMIN",
+            "score": "0",
+            "avatar": "pp.jpg"
+        },
+        {
+            "nom": "mbaye",
+            "prenom": "gayewad",
+            "login": "admagueyesgd77@gmail.com",
+            "password": "admagueyesgd77",
+            "role": "ROLE_JOUEUR",
+            "score": "0",
+            "avatar": "admagueyesgd77"
+        },
+        {
+            "nom": "sx",
+            "prenom": "test",
+            "login": "joueu234r1@gmail.com",
+            "password": "joueu234r1",
+            "role": "ROLE_JOUEUR",
+            "score": "0",
+            "avatar": "joueu234r1_JOUEUR"
+        },
+        {
+            "nom": "mbaye",
+            "prenom": "gayewad",
+            "login": "admin123r@gmail.com",
+            "password": "admin123r",
+            "role": "ROLE_ADMIN",
+            "score": "0",
+            "avatar": "admin123r_ADMIN"
         }
     ],
     "questions": [
@@ -431,6 +494,152 @@
             "correct": [
                 [
                     "3"
+                ]
+            ]
+        },
+        {
+            "question": "fdgtg",
+            "nbrPoints": "1",
+            "reponses": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "question": "fgg",
+            "nbrPoints": "3",
+            "reponses": [
+                "",
+                "",
+                " gg"
+            ],
+            "correct": [
+                [
+                    "",
+                    "",
+                    " gg"
+                ]
+            ]
+        },
+        {
+            "question": "vbbbb",
+            "nbrPoints": "5",
+            "reponses": [
+                "",
+                "vbvb"
+            ],
+            "correct": [
+                [
+                    "",
+                    "vbvb"
+                ]
+            ]
+        },
+        {
+            "question": "vgbb",
+            "nbrPoints": "7",
+            "reponses": [
+                "",
+                "ya pas",
+                "ikkk",
+                "je sais pas"
+            ],
+            "correct": [
+                [
+                    "4"
+                ]
+            ]
+        },
+        {
+            "question": "hh",
+            "nbrPoints": "3",
+            "reponses": [
+                "",
+                "",
+                "bb"
+            ],
+            "correct": [
+                [
+                    "",
+                    "",
+                    "bb"
+                ]
+            ]
+        },
+        {
+            "question": "hhh",
+            "nbrPoints": "4",
+            "reponses": [
+                "",
+                "",
+                "vvb ",
+                "bbb",
+                "bbb",
+                "bjj"
+            ],
+            "correct": [
+                "3",
+                "5"
+            ]
+        },
+        {
+            "question": "bbnbn",
+            "nbrPoints": "1",
+            "reponses": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "correct": [
+                [
+                    "3"
+                ]
+            ]
+        },
+        {
+            "question": "",
+            "nbrPoints": "",
+            "reponses": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "correct": [
+                [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            ]
+        },
+        {
+            "question": "",
+            "nbrPoints": "",
+            "reponses": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "correct": [
+                "3"
+            ]
+        },
+        {
+            "question": "aujour c'est le ?",
+            "nbrPoints": "5",
+            "reponses": [
+                "16",
+                "14",
+                "15"
+            ],
+            "correct": [
+                [
+                    "2"
                 ]
             ]
         }

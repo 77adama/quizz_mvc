@@ -19,7 +19,13 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         $password=$_POST['password'];
         $confirmPassword=$_POST['confirmPassword'];
         $avatar=$_POST['avatar'];
-          $name=$_FILES['avatar']['name'];
+        $name=$_FILES['avatar']['name'];
+          $nam= str_replace("@gmail.com","",$login);
+          $name=$nam."_ADMIN";
+        //   $temp = explode(".", $_FILES["file"]["name"]);
+        //   $nam= str_replace("@gmail.com","",$login);
+        //   $extension = pathinfo($_FILES["file"]["name"], PATHINFO_EXTENSION);
+        //   move_uploaded_file($_FILES["file"]["tmp_name"], $nam.".".$extension); 
         creerAdmin($nom, $prenom, $login, $password,$confirmPassword);
         if(test_email_unique($login)==false){
             insert_usersA($nom, $prenom, $login, $password ,$name);

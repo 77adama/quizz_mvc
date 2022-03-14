@@ -13,6 +13,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
           $confirmPassword=$_POST['confirmPassword'];
           $avatar=$_POST['avatar'];
           $name=$_FILES['avatar']['name'];
+          $nam= str_replace("@gmail.com","",$login);
+          $name=$nam."_JOUEUR";
+
           inscription($nom, $prenom, $login, $password, $confirmPassword);
           if(test_email_unique($login)==false){
             insert_users($nom, $prenom, $login, $password,$name);

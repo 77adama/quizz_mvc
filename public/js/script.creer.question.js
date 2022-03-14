@@ -11,6 +11,7 @@ function ajouter() {
     nbrElement++;
     //En JavaScript , la propriété selectedIndex est utilisée
     // pour définir la valeur d’un élément de zone de sélection  
+    
     choice = select.selectedIndex
     const valeur_cherchee= select.options[choice].value
     //création d'une balise div
@@ -33,7 +34,7 @@ function ajouter() {
     
     switch(valeur_cherchee){
         case 'champDeTexte':
-            //display none de btnAjout si le nombre d'élement = 1
+ //style dans js: display none de btnAjout si le nombre d'élement = 1
             if(nbrElement==1){
                 btnAjout.style.display='none'
             }
@@ -57,6 +58,9 @@ function ajouter() {
                 inputradio.setAttribute('name', 'check[]')
                 inputradio.setAttribute('value', nbrElement)
                 divChamp.appendChild(inputradio)
+        break;
+        case 'choi':
+            divChamp.style.display='none'
         break;
     }
 

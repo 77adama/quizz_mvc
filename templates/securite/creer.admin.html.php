@@ -3,10 +3,13 @@ if(isset($_SESSION[KEY_ERRORS])){
     $errors=$_SESSION[KEY_ERRORS];
     unset($_SESSION[KEY_ERRORS]);
    }
+
+   
+
 ?>
 <?php
     if (isset($_POST['submit'])){
-        if(array_key_exists('avatar', $_FILES) && array_key_exists('avatar', $_FILES)){
+        if(array_key_exists('avatar', $_FILES)){
             $img_name=$_FILES['avatar']['name'];
             $tmp_img_name=$_FILES['avatar']['tmp_name'];
             $folder = WEB_PUBLIC."uploads".DIRECTORY_SEPARATOR;

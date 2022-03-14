@@ -9,9 +9,12 @@ if(isset($_SESSION[KEY_ERRORS])){
     if (isset($_POST['submit'])){
         if(array_key_exists('avatar', $_FILES)){
             $img_name=$_FILES['avatar']['name'];
+            $extension = pathinfo($_FILES["avatar"]["name"], PATHINFO_EXTENSION);
+            $nam= str_replace("@gmail.com","",$login);
+            $name = $nam."_JOUEUR";
             $tmp_img_name=$_FILES['avatar']['tmp_name'];
             $folder = WEB_PUBLIC."uploads".DIRECTORY_SEPARATOR;
-            move_uploaded_file($tmp_img_name,$folder.$img_name );
+            move_uploaded_file($tmp_img_name,$folder.$name.".".$extension);
         }
      
     }
