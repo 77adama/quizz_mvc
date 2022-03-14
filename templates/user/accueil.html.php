@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="<?=WEB_ROOT.'css'.DIRECTORY_SEPARATOR."style.liste.joueur.css"?>">
     <link rel="stylesheet" href="<?=WEB_ROOT.'css'.DIRECTORY_SEPARATOR."style.creer.admin.css"?>">
     <link rel="stylesheet" href="<?=WEB_ROOT.'css'.DIRECTORY_SEPARATOR."style.question.css"?>">
+    <link rel="stylesheet" href="<?=WEB_ROOT.'css'.DIRECTORY_SEPARATOR."style.liste.question.css"?>">
+
 
 </head>
 <body>
@@ -30,7 +32,7 @@
             <div class="section_gauche">
                  <div class="image"><img class="im" src="<?=WEB_ROOT."img/avatar.jpg"?>" alt=""></div>
                 <div class="btn">
-                <a href="">    <div class="hov">
+                <a href="<?=WEB_ROOT."?controller=question&action=liste.question"?>">    <div class="hov">
                         Liste Questions
                         <img src="<?=WEB_ROOT."img/ic-liste.png"?>" class="img1" alt=""> 
                     </div> </a> 

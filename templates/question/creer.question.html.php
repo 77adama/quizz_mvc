@@ -11,7 +11,9 @@
                 </div>
                 <div id="divv" class="nmbrepoint">
                     <label for="nmbrP">nombres de points</label>
-                    <input type="number" id="nmbrP" name="nbrPoints" min="1" max="10">
+                    <div class="dec-button">-</div>
+                    <input type="text" id="nmbrP" name="nbrPoints" value="0" class="input-filed">
+                    <div class="inc-button">+</div>
                 </div>
                 <div id="divv" class="typereonse">
                     <label for=""> type de réponse</label>

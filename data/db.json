@@ -584,52 +584,6 @@
             ]
         },
         {
-            "question": "bbnbn",
-            "nbrPoints": "1",
-            "reponses": [
-                "",
-                "",
-                "",
-                ""
-            ],
-            "correct": [
-                [
-                    "3"
-                ]
-            ]
-        },
-        {
-            "question": "",
-            "nbrPoints": "",
-            "reponses": [
-                "",
-                "",
-                "",
-                ""
-            ],
-            "correct": [
-                [
-                    "",
-                    "",
-                    "",
-                    ""
-                ]
-            ]
-        },
-        {
-            "question": "",
-            "nbrPoints": "",
-            "reponses": [
-                "",
-                "",
-                "",
-                ""
-            ],
-            "correct": [
-                "3"
-            ]
-        },
-        {
             "question": "aujour c'est le ?",
             "nbrPoints": "5",
             "reponses": [
@@ -640,6 +594,20 @@
             "correct": [
                 [
                     "2"
+                ]
+            ]
+        },
+        {
+            "question": "la capital du senegal",
+            "nbrPoints": "10",
+            "reponses": [
+                "dakar",
+                "st louis",
+                "louga"
+            ],
+            "correct": [
+                [
+                    "1"
                 ]
             ]
         }

@@ -47,6 +47,26 @@ textarea{
    border-right: 2px solid #51bfd0;
    border-top: none;
    border-left: none;
+   
+  
+}
+.dec-button{
+    color: black;
+    position: relative;
+    right: 0%;
+  
+    width: 5%;
+   padding-left: 1%;
+   padding-bottom: -2%;
+   padding-top: -1%;
+   height: 10%;
+   font-size: 250%;
+}
+.inc-button{
+    
+    width: 5%;
+   padding: 1%;
+   font-size: 250%;
 }
 label{
     font-size: 1.2em;

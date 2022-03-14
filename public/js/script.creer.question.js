@@ -5,6 +5,32 @@ const delet=document.getElementById('delete');
 const form =document.getElementById('formm')
 const questionWrap=document.getElementById('question-wrap')
 const select =document.getElementById('typeRep')
+var incrementationButton= document.querySelector('.inc-button')
+var decrementationButton= document.querySelector('.dec-button')
+
+
+incrementationButton.addEventListener('click', function(event){
+        var buttonClickted=event.target; 
+        var input= buttonClickted.parentElement.children[2];
+        var inputValue = input.value
+        var newValue = parseInt(inputValue)+1;
+        input.value = newValue;
+   })
+    
+  decrementationButton.addEventListener('click', function(event){
+    var buttonClickted=event.target; 
+    var input= buttonClickted.parentElement.children[2];
+    var inputValue = input.value
+    var newValue = parseInt(inputValue)-1;
+    input.value = newValue;
+    if (newValue>=0) {
+        input.value=newValue;
+    }else{
+       input.value=0
+       input.style.border='2px solid red'
+    }
+})
+
 
 var nbrElement =0
 function ajouter() {
@@ -41,6 +67,7 @@ function ajouter() {
         break;
 
         case 'checkboxValue':
+            
          //création input type checbox
             const inputChecbox=document.createElement('input')
             inputChecbox.setAttribute('type', 'checkbox')
@@ -50,7 +77,6 @@ function ajouter() {
             divChamp.appendChild(inputChecbox)
         break;
         case 'radioValue':
-            
                 //creation input type radio
                 const inputradio=document.createElement('input')
                 inputradio.setAttribute('type', 'radio')

@@ -147,6 +147,7 @@ button{
     height: 100%;
    display: flex;
    align-items: center;
+  
 }
 .hov:hover{
     background-color: #f8f3f0;
