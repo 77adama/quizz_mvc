@@ -33,20 +33,20 @@
                  <div class="image"><img class="im" src="<?=WEB_ROOT."img/avatar.jpg"?>" alt=""></div>
                 <div class="btn">
                 <a href="<?=WEB_ROOT."?controller=question&action=liste.question"?>">    <div class="hov">
-                        Liste Questions
+                      <b class="liennn"> Liste Questions </b> 
                         <img src="<?=WEB_ROOT."img/ic-liste.png"?>" class="img1" alt=""> 
                     </div> </a> 
                     <a href="<?=WEB_ROOT."?controller=securite&action=creer.admin"?>">    <div class="hov">
                         <!-- definition du lien lui dire..... -->
-                         Créer Admin
+                        <b class="liennn">    Créer Admin </b> 
                          <img src="<?=WEB_ROOT."img/ic-ajout.png"?>" class="img2" alt="">
                     </div>  </a> 
                     <a href="<?=WEB_ROOT."?controller=user&action=liste.joueur"?>"> <div class="hov">
-                         Liste joueurs
+                    <b class="liennn">    Liste joueurs </b> 
                          <img src="<?=WEB_ROOT."img/ic-liste.png" ?>"class="img2" alt=""> 
                     </div> </a> 
                     <a href="<?=WEB_ROOT."?controller=question&action=creer.question"?>"> <div class="hov">
-                         Créer Question
+                    <b class="liennn">     Créer Question </b> 
                           <img src="<?=WEB_ROOT."img/ic-ajout.png"?>" class="img1" alt=""> 
                     </div> </a>
                   

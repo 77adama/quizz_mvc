@@ -425,24 +425,6 @@
             ]
         },
         {
-            "question": "je teste",
-            "nbrPoints": "4",
-            "reponses": [
-                "fujufj",
-                "duhehuh"
-            ]
-        },
-        {
-            "question": ",kk,",
-            "nbrPoints": "3",
-            "reponses": [
-                "ikkk"
-            ],
-            "correct": [
-                null
-            ]
-        },
-        {
             "question": "quel est mon nom?",
             "nbrPoints": "3",
             "reponses": [
@@ -455,18 +437,6 @@
             "correct": [
                 [
                     "on"
-                ]
-            ]
-        },
-        {
-            "question": "je teste?",
-            "nbrPoints": "3",
-            "reponses": [
-                "ya pas"
-            ],
-            "correct": [
-                [
-                    "ya pas"
                 ]
             ]
         },
@@ -498,93 +468,7 @@
             ]
         },
         {
-            "question": "fdgtg",
-            "nbrPoints": "1",
-            "reponses": [
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "question": "fgg",
-            "nbrPoints": "3",
-            "reponses": [
-                "",
-                "",
-                " gg"
-            ],
-            "correct": [
-                [
-                    "",
-                    "",
-                    " gg"
-                ]
-            ]
-        },
-        {
-            "question": "vbbbb",
-            "nbrPoints": "5",
-            "reponses": [
-                "",
-                "vbvb"
-            ],
-            "correct": [
-                [
-                    "",
-                    "vbvb"
-                ]
-            ]
-        },
-        {
-            "question": "vgbb",
-            "nbrPoints": "7",
-            "reponses": [
-                "",
-                "ya pas",
-                "ikkk",
-                "je sais pas"
-            ],
-            "correct": [
-                [
-                    "4"
-                ]
-            ]
-        },
-        {
-            "question": "hh",
-            "nbrPoints": "3",
-            "reponses": [
-                "",
-                "",
-                "bb"
-            ],
-            "correct": [
-                [
-                    "",
-                    "",
-                    "bb"
-                ]
-            ]
-        },
-        {
-            "question": "hhh",
-            "nbrPoints": "4",
-            "reponses": [
-                "",
-                "",
-                "vvb ",
-                "bbb",
-                "bbb",
-                "bjj"
-            ],
-            "correct": [
-                "3",
-                "5"
-            ]
-        },
-        {
-            "question": "aujour c'est le ?",
+            "question": "aujourd'hui c'est le ?",
             "nbrPoints": "5",
             "reponses": [
                 "16",
@@ -609,6 +493,33 @@
                 [
                     "1"
                 ]
+            ]
+        },
+        {
+            "question": "Qui doivent cr\u00e9er les questions? ",
+            "nbrPoints": "10",
+            "reponses": [
+                "les joueurs",
+                "les admins",
+                "tout le monde"
+            ],
+            "correct": [
+                [
+                    "3"
+                ]
+            ]
+        },
+        {
+            "question": "",
+            "nbrPoints": "0",
+            "reponses": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "correct": [
+                null
             ]
         }
     ]

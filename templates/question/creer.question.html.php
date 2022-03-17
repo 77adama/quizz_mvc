@@ -12,7 +12,7 @@
                 <div id="divv" class="nmbrepoint">
                     <label for="nmbrP">nombres de points</label>
                     <div class="dec-button">-</div>
-                    <input type="text" id="nmbrP" name="nbrPoints" value="0" class="input-filed">
+                    <input type="text" id="nmbrP" name="nbrPoints"  value="0" class="input-filed">
                     <div class="inc-button">+</div>
                 </div>
                 <div id="divv" class="typereonse">
@@ -21,12 +21,11 @@
                         <option value="choi">---Donnez le type de reponses---</option>
                         <option value="radioValue">  choix simple</option>
                         <option value="checkboxValue"> choix multiple</option>
-                        <option value="champDeTexte">texte</option>
+                        <option id="option1" value="champDeTexte">texte</option>
                     </select>
                 <img id="ajout" class="ajout-reponse" src="<?=WEB_ROOT."img/ic-ajout-réponse.png"?>" alt="">  
                 </div>
                 <div id="divvv" class="reponse">
-                    
                 </div>
                 <button id="BTN">Enregistrer</button>
         </form>

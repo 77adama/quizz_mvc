@@ -27,10 +27,10 @@
     </div>
     <div class="input">
     <?php if($page != 1):?>
-    <button class="btn1" id="btnn"><a href="http://localhost:8000/?controller=question&action=liste.question&page=<?=$page-1;?>&limit=<?=$limit;?>">precedent</a></button>
+    <button class="btn1" id="btnnn"><a class="asb" href="http://localhost:8000/?controller=question&action=liste.question&page=<?=$page-1;?>&limit=<?=$limit;?>">Precedent</a></button>
     <?php endif?>
     <?php 
     if($page < $totalPages):?>
-    <button class="btn2" id="btnn"><a href="http://localhost:8000/?controller=question&action=liste.question&page=<?=$page+1;?>&limit=<?=$limit;?>">suivant</a></button>
+    <button class="btn2" id="btnn"><a class="asb" href="http://localhost:8000/?controller=question&action=liste.question&page=<?=$page+1;?>&limit=<?=$limit;?>">suivant</a></button>
     <?php endif?>
     </div>

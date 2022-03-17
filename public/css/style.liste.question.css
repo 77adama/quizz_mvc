@@ -37,13 +37,18 @@
     flex: 8.5;
    
 }
-#btnn{
+#btnnn{
     bottom: 8%;
-    text-align: center;
-    padding-bottom: 2%;
+    display: flex;
+    width: 12%;
+    
 }
 #btnn{
+   
     bottom: 8%;
+  display: flex;
+ 
+  
 }
 ol{
     margin-left: 10%;
@@ -52,4 +57,9 @@ ol{
 .liQu{
     font-size: 200%;
     color: #897b6b;
+}
+.asb{
+    color: white;
+    
+    
 }

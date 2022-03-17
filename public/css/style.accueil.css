@@ -90,7 +90,7 @@ h1{
     margin-bottom: 1%;
 }
 ul{
-    list-style: none;
+   
 }
 .lien{
     flex: 1; 
@@ -171,5 +171,10 @@ button{
      height: 50%;
      left: 93%;
      top: 13%;
+ }
+ .liennn{
+    font-size: 100%;
+    color: #988c7d;
+    margin-left: 7%;
  }
  
